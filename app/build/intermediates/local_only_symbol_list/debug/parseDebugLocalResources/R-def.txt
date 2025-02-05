@@ -29,7 +29,9 @@ id home_image
 id logo
 id main
 id navigation_bar
+id no_camera_access_view
 id password
+id preview_display_layout
 id title
 id togglePasswordVisibility
 id tv_dont_have_account

@@ -3450,6 +3450,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id no_camera_access_view
 id none
 id normal
 id north
@@ -3492,6 +3493,7 @@ id pin
 id position
 id postLayout
 id pressed
+id preview_display_layout
 id progress_circular
 id progress_horizontal
 id radio

@@ -4,6 +4,7 @@ ADDED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/ma
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:2:1-45:12
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:2:1-45:12
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:2:1-45:12
+MERGED from [mp_pose_tracking_aar.aar] /Users/brian/.gradle/caches/8.10.2/transforms/c01754a2780f9842a5a8aa59a7246937/transformed/mp_pose_tracking_aar/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/brian/.gradle/caches/8.10.2/transforms/e195d9082c0098360e28d6d65bc055ea/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/brian/.gradle/caches/8.10.2/transforms/5ff550ca5e8a620b005b3c695fc4ac6f/transformed/constraintlayout-2.2.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /Users/brian/.gradle/caches/8.10.2/transforms/aff9613c64aebdaea501daed69511013/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -80,6 +81,8 @@ ADDED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/ma
 application
 ADDED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:12:5-43:19
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:12:5-43:19
+MERGED from [mp_pose_tracking_aar.aar] /Users/brian/.gradle/caches/8.10.2/transforms/c01754a2780f9842a5a8aa59a7246937/transformed/mp_pose_tracking_aar/AndroidManifest.xml:9:5-20
+MERGED from [mp_pose_tracking_aar.aar] /Users/brian/.gradle/caches/8.10.2/transforms/c01754a2780f9842a5a8aa59a7246937/transformed/mp_pose_tracking_aar/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/brian/.gradle/caches/8.10.2/transforms/e195d9082c0098360e28d6d65bc055ea/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/brian/.gradle/caches/8.10.2/transforms/e195d9082c0098360e28d6d65bc055ea/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/brian/.gradle/caches/8.10.2/transforms/5ff550ca5e8a620b005b3c695fc4ac6f/transformed/constraintlayout-2.2.0/AndroidManifest.xml:7:5-20
@@ -162,6 +165,8 @@ uses-sdk
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml
 INJECTED from /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml
+MERGED from [mp_pose_tracking_aar.aar] /Users/brian/.gradle/caches/8.10.2/transforms/c01754a2780f9842a5a8aa59a7246937/transformed/mp_pose_tracking_aar/AndroidManifest.xml:5:5-7:41
+MERGED from [mp_pose_tracking_aar.aar] /Users/brian/.gradle/caches/8.10.2/transforms/c01754a2780f9842a5a8aa59a7246937/transformed/mp_pose_tracking_aar/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.12.0] /Users/brian/.gradle/caches/8.10.2/transforms/e195d9082c0098360e28d6d65bc055ea/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.12.0] /Users/brian/.gradle/caches/8.10.2/transforms/e195d9082c0098360e28d6d65bc055ea/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] /Users/brian/.gradle/caches/8.10.2/transforms/5ff550ca5e8a620b005b3c695fc4ac6f/transformed/constraintlayout-2.2.0/AndroidManifest.xml:5:5-44
