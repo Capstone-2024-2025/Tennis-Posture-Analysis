@@ -7,4 +7,110 @@
     android:layout_height="match_parent"
     tools:context=".FeedbackPage">
 
+    <!-- Bottom navigation panel -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navigation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="4">
+
+
+        <!-- Home Box -->
+        <LinearLayout
+            android:id="@+id/box_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#94356836"
+            android:contentDescription="Home Box"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:contentDescription="Home Image"
+                android:src="@drawable/home3" />
+        </LinearLayout>
+
+
+
+        <!-- Capture Box -->
+        <LinearLayout
+            android:id="@+id/box_capture"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#94356836"
+            android:contentDescription="Capture Box"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/capture_image"
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:contentDescription="Capture Image"
+                android:src="@drawable/capture" />
+        </LinearLayout>
+
+
+
+        <!-- Upload Box -->
+        <LinearLayout
+            android:id="@+id/box_upload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#94356836"
+            android:contentDescription="Upload Box"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/upload_image"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:contentDescription="Upload Image"
+                android:src="@drawable/upload" />
+        </LinearLayout>
+
+
+
+        <!-- Feedback Box -->
+        <LinearLayout
+            android:id="@+id/box_feedback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#94356836"
+            android:contentDescription="Feedback Box"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/Feedback_image"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:contentDescription="Feedback Image"
+                android:src="@drawable/feedback" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

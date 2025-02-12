@@ -17,6 +17,7 @@ public class HomePage extends AppCompatActivity {
         View boxUpload = findViewById(R.id.box_upload);
         View boxFeedback = findViewById(R.id.box_feedback);
 
+        /*
         // Set up OnClickListeners for each box
         boxHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,7 @@ public class HomePage extends AppCompatActivity {
             }
         });
 
+         */
         boxCapture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

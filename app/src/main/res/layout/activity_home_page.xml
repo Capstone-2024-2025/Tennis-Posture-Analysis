@@ -63,12 +63,13 @@
             android:background="#94356836"
             android:contentDescription="Capture Box"
             android:gravity="center">
+
             <ImageView
                 android:id="@+id/capture_image"
                 android:layout_width="42dp"
                 android:layout_height="40dp"
                 android:contentDescription="Home Image"
-                android:src="@drawable/home3" />
+                android:src="@drawable/capture" />
         </LinearLayout>
 
 
@@ -88,7 +89,7 @@
                 android:layout_width="42dp"
                 android:layout_height="40dp"
                 android:contentDescription="Home Image"
-                android:src="@drawable/home3" />
+                android:src="@drawable/upload" />
         </LinearLayout>
 
 
@@ -108,7 +109,7 @@
                 android:layout_width="42dp"
                 android:layout_height="40dp"
                 android:contentDescription="Home Image"
-                android:src="@drawable/home3" />
+                android:src="@drawable/feedback" />
 
         </LinearLayout>
 

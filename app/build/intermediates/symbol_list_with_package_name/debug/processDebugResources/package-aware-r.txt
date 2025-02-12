@@ -3012,12 +3012,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable capture
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext_background
+drawable feedback
 drawable hidepassword
 drawable home3
 drawable ic_arrow_back_black_24
@@ -3118,6 +3120,7 @@ drawable rounded_box
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable upload
 drawable upload2
 id ALT
 id BOTTOM_END
