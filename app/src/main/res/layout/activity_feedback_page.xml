@@ -64,12 +64,11 @@
 
             <ImageView
                 android:id="@+id/capture_image"
-                android:layout_width="50dp"
-                android:layout_height="70dp"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
                 android:contentDescription="Capture Image"
                 android:src="@drawable/capture" />
         </LinearLayout>
-
 
 
         <!-- Upload Box -->
@@ -112,5 +111,16 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <!-- Top Box -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#7C9A7E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

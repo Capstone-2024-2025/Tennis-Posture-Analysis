@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     >
 
-
-
     <!-- Bottom navigation panel -->
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -114,5 +112,47 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <!-- Top Box -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#7C9A7E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- UserIcon -->
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|right"
+            android:translationX="-10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/UserIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:translationY="20dp"
+                android:contentDescription="Home Image"
+                app:srcCompat="@drawable/userpic" />
+
+        </LinearLayout>
+
+        <!-- "Welcome User" Text -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:text="Welcome User!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationX="15dp"
+            android:translationY="-15dp"/>
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

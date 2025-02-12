@@ -18,7 +18,9 @@ drawable img
 drawable rounded_box
 drawable upload
 drawable upload2
+drawable userpic
 id Feedback_image
+id UserIcon
 id box_capture
 id box_feedback
 id box_home
@@ -35,6 +37,7 @@ id navigation_bar
 id no_camera_access_view
 id password
 id preview_display_layout
+id textView
 id title
 id togglePasswordVisibility
 id tv_dont_have_account

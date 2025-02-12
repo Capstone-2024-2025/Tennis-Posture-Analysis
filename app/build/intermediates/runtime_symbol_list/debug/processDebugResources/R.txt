@@ -3121,6 +3121,7 @@ int drawable tooltip_frame_dark 0x7f0700ea
 int drawable tooltip_frame_light 0x7f0700eb
 int drawable upload 0x7f0700ef
 int drawable upload2 0x7f0700ec
+int drawable userpic 0x7f0700f0
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002
@@ -3136,6 +3137,7 @@ int id SHOW_PROGRESS 0x7f08000b
 int id SYM 0x7f08000c
 int id TOP_END 0x7f08000d
 int id TOP_START 0x7f08000e
+int id UserIcon 0x7f080210
 int id above 0x7f08000f
 int id accelerate 0x7f080010
 int id accessibility_action_clickable_span 0x7f080011
@@ -3591,6 +3593,7 @@ int id textSpacerNoButtons 0x7f0801d2
 int id textSpacerNoTitle 0x7f0801d3
 int id textStart 0x7f0801d4
 int id textTop 0x7f0801d5
+int id textView 0x7f08020f
 int id text_input_end_icon 0x7f0801d6
 int id text_input_error_icon 0x7f0801d7
 int id text_input_start_icon 0x7f0801d8
