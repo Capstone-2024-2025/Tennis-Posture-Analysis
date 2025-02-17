@@ -20,7 +20,6 @@ drawable upload
 drawable upload2
 drawable userpic
 id Feedback_image
-id UserIcon
 id box_capture
 id box_feedback
 id box_home
@@ -33,6 +32,9 @@ id fragment_container
 id home_image
 id logo
 id main
+id menu_logout
+id menu_profile
+id menu_settings
 id navigation_bar
 id no_camera_access_view
 id password
@@ -44,11 +46,13 @@ id tv_dont_have_account
 id tv_forgot_password
 id tv_sign_up
 id upload_image
+id user_icon
 layout activity_capture_page
 layout activity_feedback_page
 layout activity_home_page
 layout activity_log_in_page
 layout activity_upload_page
+menu user_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
