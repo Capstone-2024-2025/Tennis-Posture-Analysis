@@ -3407,8 +3407,7 @@ int id material_timepicker_view 0x7f08011a
 int id material_value_index 0x7f08011b
 int id matrix 0x7f08011c
 int id menu_logout 0x7f080211
-int id menu_profile 0x7f080212
-int id menu_settings 0x7f080213
+int id menu_player 0x7f080219
 int id message 0x7f08011d
 int id middle 0x7f08011e
 int id mini 0x7f08011f
@@ -3590,11 +3589,15 @@ int id tag_unhandled_key_listeners 0x7f0801ce
 int id tag_window_insets_animation_callback 0x7f0801cf
 int id text 0x7f0801d0
 int id text2 0x7f0801d1
+int id textCapture 0x7f080216
 int id textEnd 0x7f0801d2
+int id textFeedback 0x7f080217
+int id textHome 0x7f080215
 int id textSpacerNoButtons 0x7f0801d3
 int id textSpacerNoTitle 0x7f0801d4
 int id textStart 0x7f0801d5
 int id textTop 0x7f0801d6
+int id textUpload 0x7f080218
 int id textView 0x7f0801d7
 int id text_input_end_icon 0x7f0801d8
 int id text_input_error_icon 0x7f0801d9
@@ -3772,6 +3775,7 @@ int layout activity_capture_page 0x7f0b001c
 int layout activity_feedback_page 0x7f0b001d
 int layout activity_home_page 0x7f0b001e
 int layout activity_log_in_page 0x7f0b001f
+int layout activity_player_info_page 0x7f0b0070
 int layout activity_upload_page 0x7f0b0020
 int layout custom_dialog 0x7f0b0021
 int layout design_bottom_navigation_item 0x7f0b0022

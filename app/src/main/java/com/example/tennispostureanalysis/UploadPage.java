@@ -8,9 +8,6 @@ import android.widget.PopupMenu;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class UploadPage extends AppCompatActivity {
 
@@ -66,11 +63,8 @@ public class UploadPage extends AppCompatActivity {
 
         popup.setOnMenuItemClickListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.menu_profile) {
-                startActivity(new Intent(UploadPage.this, ProfilePage.class));
-                return true;
-            } else if (id == R.id.menu_settings) {
-                startActivity(new Intent(UploadPage.this, SettingsPage.class));
+            if (id == R.id.menu_player) {
+                startActivity(new Intent(UploadPage.this, PlayerInfoPage.class));
                 return true;
             } else if (id == R.id.menu_logout) {
                 finish();

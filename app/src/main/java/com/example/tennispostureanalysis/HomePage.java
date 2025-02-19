@@ -2,11 +2,10 @@ package com.example.tennispostureanalysis;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android .view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
-import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomePage extends AppCompatActivity {
@@ -72,11 +71,8 @@ public class HomePage extends AppCompatActivity {
 
         popup.setOnMenuItemClickListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.menu_profile) {
-                startActivity(new Intent(HomePage.this, ProfilePage.class));
-                return true;
-            } else if (id == R.id.menu_settings) {
-                startActivity(new Intent(HomePage.this, SettingsPage.class));
+            if (id == R.id.menu_player) {
+                startActivity(new Intent(HomePage.this, PlayerInfoPage.class));
                 return true;
             } else if (id == R.id.menu_logout) {
                 finish();

@@ -3408,8 +3408,7 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id menu_logout
-id menu_profile
-id menu_settings
+id menu_player
 id message
 id middle
 id mini
@@ -3591,11 +3590,15 @@ id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id text
 id text2
+id textCapture
 id textEnd
+id textFeedback
+id textHome
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textUpload
 id textView
 id text_input_end_icon
 id text_input_error_icon
@@ -3773,6 +3776,7 @@ layout activity_capture_page
 layout activity_feedback_page
 layout activity_home_page
 layout activity_log_in_page
+layout activity_player_info_page
 layout activity_upload_page
 layout custom_dialog
 layout design_bottom_navigation_item

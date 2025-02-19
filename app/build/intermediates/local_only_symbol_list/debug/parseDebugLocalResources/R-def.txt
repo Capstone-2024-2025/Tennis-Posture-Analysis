@@ -33,12 +33,15 @@ id home_image
 id logo
 id main
 id menu_logout
-id menu_profile
-id menu_settings
+id menu_player
 id navigation_bar
 id no_camera_access_view
 id password
 id preview_display_layout
+id textCapture
+id textFeedback
+id textHome
+id textUpload
 id textView
 id title
 id togglePasswordVisibility
@@ -51,6 +54,7 @@ layout activity_capture_page
 layout activity_feedback_page
 layout activity_home_page
 layout activity_log_in_page
+layout activity_player_info_page
 layout activity_upload_page
 menu user_menu
 mipmap ic_launcher
