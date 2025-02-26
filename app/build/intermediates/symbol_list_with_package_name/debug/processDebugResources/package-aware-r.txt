@@ -3118,6 +3118,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_box
 drawable test_level_drawable
+drawable toggle_button_selector
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable upload
@@ -3229,6 +3230,7 @@ id box_capture
 id box_feedback
 id box_home
 id box_upload
+id box_user
 id btn_sign_in
 id buttonPanel
 id cache_measures
@@ -3290,6 +3292,8 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id done_button
+id done_text
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3318,6 +3322,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feet_picker
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3334,7 +3339,9 @@ id forever
 id form
 id fragment_container
 id fragment_container_view_tag
+id frameLayout
 id frost
+id full_name
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -3344,7 +3351,11 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id guideline
+id guideline2
+id handednessGroup
 id header_title
+id height
 id hide_ime_id
 id hideable
 id home
@@ -3360,9 +3371,11 @@ id ignore
 id ignoreRequest
 id image
 id immediateStop
+id inches_picker
 id included
 id indeterminate
 id info
+id info_button
 id invisible
 id inward
 id italic
@@ -3372,6 +3385,7 @@ id jumpToStart
 id labeled
 id layout
 id left
+id leftHanded
 id leftToRight
 id legacy
 id line1
@@ -3380,6 +3394,7 @@ id linear
 id listMode
 id list_item
 id logo
+id logout_button
 id m3_side_sheet
 id main
 id marquee
@@ -3407,8 +3422,6 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
-id menu_logout
-id menu_player
 id message
 id middle
 id mini
@@ -3508,11 +3521,13 @@ id rectangles
 id report_drawn
 id reverseSawtooth
 id right
+id rightHanded
 id rightToLeft
 id right_icon
 id right_side
 id rounded
 id row_index_key
+id save_button
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3638,7 +3653,7 @@ id unlabeled
 id up
 id upload_image
 id useLogo
-id user_icon
+id user_image
 id vertical
 id vertical_only
 id view_offset_helper
@@ -3778,6 +3793,7 @@ layout activity_home_page
 layout activity_log_in_page
 layout activity_player_info_page
 layout activity_upload_page
+layout activity_user_menu
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3794,6 +3810,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_height_picker
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3857,7 +3874,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu user_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

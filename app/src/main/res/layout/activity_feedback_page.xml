@@ -19,22 +19,24 @@
 
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Top Box -->
     <LinearLayout
         android:id="@+id/navigation_bar"
-        android:layout_width="0dp"
+        android:layout_width="470dp"
         android:layout_height="80dp"
         android:background="#EEEEEE"
         android:orientation="horizontal"
         android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
 
         <!-- Home Box -->
         <LinearLayout
             android:id="@+id/box_home"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -61,7 +63,7 @@
         <!-- Capture Box -->
         <LinearLayout
             android:id="@+id/box_capture"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -85,37 +87,10 @@
         </LinearLayout>
 
 
-        <!-- Upload Box -->
-        <LinearLayout
-            android:id="@+id/box_upload"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#94356836"
-            android:contentDescription="Upload Box"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/upload_image"
-                android:layout_width="42dp"
-                android:layout_height="40dp"
-                android:contentDescription="Upload Image"
-                android:src="@drawable/upload" />
-
-            <TextView
-                android:id="@+id/textUpload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Upload" />
-        </LinearLayout>
-
-
         <!-- Feedback Box -->
         <LinearLayout
             android:id="@+id/box_feedback"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -141,7 +116,6 @@
 
     </LinearLayout>
 
-    <!-- Top Box -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -150,25 +124,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- UserIcon -->
+        <!-- UserIconBox -->
         <LinearLayout
+            android:id="@+id/box_user"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_gravity="bottom|right"
-            android:translationX="-10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:translationX="-10dp">
 
             <ImageView
-                android:id="@+id/user_icon"
+                android:id="@+id/user_image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:translationY="20dp"
                 android:contentDescription="Home Image"
+                android:translationY="20dp"
                 app:srcCompat="@drawable/userpic" />
 
         </LinearLayout>
 
     </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

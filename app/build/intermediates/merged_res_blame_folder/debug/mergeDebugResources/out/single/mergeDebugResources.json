@@ -4,6 +4,10 @@
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/home3.png"
     },
     {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_feedback_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_feedback_page.xml"
+    },
+    {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
     },
@@ -12,16 +16,12 @@
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/capture.png"
     },
     {
-        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_feedback_page.xml.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_feedback_page.xml"
     },
     {
-        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/menu_user_menu.xml.flat",
-        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/menu/user_menu.xml"
+        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -42,6 +42,10 @@
     {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_dialog_height_picker.xml.flat",
+        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/dialog_height_picker.xml"
     },
     {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_feedback.png.flat",
@@ -88,10 +92,6 @@
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_player_info_page.xml.flat",
-        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_player_info_page.xml"
-    },
-    {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_capture_page.xml.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_capture_page.xml"
     },
@@ -112,12 +112,24 @@
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-mdpi/ic_launcher.webp"
     },
     {
+        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_player_info_page.xml.flat",
+        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_player_info_page.xml"
+    },
+    {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_log_in_page.xml.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_log_in_page.xml"
     },
     {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_user_menu.xml.flat",
+        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_user_menu.xml"
+    },
+    {
+        "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_toggle_button_selector.xml.flat",
+        "source": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/toggle_button_selector.xml"
     },
     {
         "merged": "/Users/alexfrenchies/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/xml_backup_rules.xml.flat",
