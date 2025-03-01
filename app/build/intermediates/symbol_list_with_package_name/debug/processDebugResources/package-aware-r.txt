@@ -3334,6 +3334,7 @@ id forever
 id form
 id fragment_container
 id fragment_container_view_tag
+id frameLayout2
 id frost
 id fullscreen_header
 id ghost_view
@@ -3359,6 +3360,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton
+id imageButton2
+id imageButton5
+id imageButton7
 id immediateStop
 id included
 id indeterminate
@@ -3600,6 +3605,10 @@ id textStart
 id textTop
 id textUpload
 id textView
+id textView2
+id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3861,6 +3870,18 @@ menu user_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string Cap
+string CapBox
+string CapImg
+string Fb
+string FbBox
+string FbImg
+string Home
+string HomeBox
+string HomeImg
+string Up
+string UpBox
+string UpImg
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3909,6 +3930,8 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string coachFeed
+string comp
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -4022,6 +4045,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string perf
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4029,6 +4053,8 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string video_analysis
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

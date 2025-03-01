@@ -4,7 +4,7 @@
             "outputFile": "com.example.tennispostureanalysis.app-mergeDebugResources-31:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/alexfrenchies/.gradle/caches/8.10.2/transforms/89d8d326ea87191807391c4792714f8a/transformed/material-1.12.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\89d8d326ea87191807391c4792714f8a\\transformed\\material-1.12.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
