@@ -4,7 +4,11 @@
             "outputFile": "com.example.tennispostureanalysis.app-mergeDebugResources-31:/values-h550dp-port-v13/values-h550dp-port-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\89d8d326ea87191807391c4792714f8a\\transformed\\material-1.12.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+=======
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\7eb2e342b25b80c05520e8c72775f3c3\\transformed\\material-1.12.0\\res\\values-h550dp-port-v13\\values-h550dp-port-v13.xml",
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

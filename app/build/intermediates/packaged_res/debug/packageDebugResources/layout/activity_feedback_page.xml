@@ -180,23 +180,29 @@
 
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- Top Box -->
     <LinearLayout
         android:id="@+id/navigation_bar"
-        android:layout_width="0dp"
+        android:layout_width="470dp"
         android:layout_height="80dp"
         android:background="#EEEEEE"
         android:orientation="horizontal"
         android:weightSum="4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintStart_toStartOf="parent"
         android:baselineAligned="false">
+=======
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
 
 
         <!-- Home Box -->
         <LinearLayout
             android:id="@+id/box_home"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -223,7 +229,7 @@
         <!-- Capture Box -->
         <LinearLayout
             android:id="@+id/box_capture"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -247,6 +253,7 @@
         </LinearLayout>
 
 
+<<<<<<< HEAD
         <!-- Upload Box -->
         <LinearLayout
             android:id="@+id/box_upload"
@@ -274,10 +281,12 @@
         </LinearLayout>
 
 
+=======
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
         <!-- Feedback Box -->
         <LinearLayout
             android:id="@+id/box_feedback"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#94356836"
@@ -303,6 +312,45 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
     <!-- Top Box -->
+=======
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#7C9A7E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- UserIconBox -->
+        <LinearLayout
+            android:id="@+id/box_user"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom|right"
+            android:orientation="vertical"
+            android:translationX="-10dp">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:contentDescription="Home Image"
+                android:translationY="20dp"
+                app:srcCompat="@drawable/userpic" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

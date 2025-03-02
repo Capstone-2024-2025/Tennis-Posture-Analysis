@@ -35,14 +35,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.TennisPostureAnalysis" >
         <activity
+            android:name="com.example.tennispostureanalysis.PlayerInfoPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.tennispostureanalysis.UserMenu"
+            android:exported="false" />
+        <activity
             android:name="com.example.tennispostureanalysis.CapturePage"
             android:exported="false" />
         <activity
             android:name="com.example.tennispostureanalysis.FeedbackPage"
             android:exported="false" />
+        <!--
         <activity
-            android:name="com.example.tennispostureanalysis.UploadPage"
+            android:name=".UploadPage"
             android:exported="false" />
+        -->
         <activity
             android:name="com.example.tennispostureanalysis.HomePage"
             android:exported="false" />

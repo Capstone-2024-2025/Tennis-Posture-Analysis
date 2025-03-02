@@ -4,6 +4,7 @@
             "outputFile": "com.example.tennispostureanalysis.app-mergeDebugResources-31:/values-mr/values-mr.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\1b89a4ef0596eddf891071b8ad4b689b\\transformed\\core-1.13.0\\res\\values-mr\\values-mr.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -22,6 +23,9 @@
                 },
                 {
                     "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\89d8d326ea87191807391c4792714f8a\\transformed\\material-1.12.0\\res\\values-mr\\values-mr.xml",
+=======
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\7eb2e342b25b80c05520e8c72775f3c3\\transformed\\material-1.12.0\\res\\values-mr\\values-mr.xml",
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +44,28 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\a3789bad456d19543eabf12e524b754f\\transformed\\appcompat-1.7.0\\res\\values-mr\\values-mr.xml",
+=======
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\7be633aac5f71b91553fc2f98b26112e\\transformed\\core-1.13.0\\res\\values-mr\\values-mr.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,155,259,360,463,565,670,787",
+                        "endColumns": "99,103,100,102,101,104,116,100",
+                        "endOffsets": "150,254,355,458,560,665,782,883"
+                    },
+                    "to": {
+                        "startLines": "38,39,40,41,42,43,44,116",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3431,3531,3635,3736,3839,3941,4046,9791",
+                        "endColumns": "99,103,100,102,101,104,116,100",
+                        "endOffsets": "3526,3630,3731,3834,3936,4041,4158,9887"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\ba63504c75adbe4ccf3b912074417ca5\\transformed\\appcompat-1.7.0\\res\\values-mr\\values-mr.xml",
+>>>>>>> 9d11cd855988d3869d136387d6da9f9dfbd4e716
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

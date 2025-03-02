@@ -22,7 +22,8 @@ public class UploadPage extends AppCompatActivity {
         View boxCapture = findViewById(R.id.box_capture);
         View boxUpload = findViewById(R.id.box_upload);
         View boxFeedback = findViewById(R.id.box_feedback);
-        ImageView userIcon = findViewById(R.id.user_icon);
+        ImageView userImage = findViewById(R.id.user_image);
+        View boxUser = findViewById(R.id.box_user);
 
         // Set up OnClickListeners for each box
         boxHome.setOnClickListener(new View.OnClickListener() {
@@ -52,32 +53,13 @@ public class UploadPage extends AppCompatActivity {
             }
         });
 
-        // Set click listener for the user icon
-        userIcon.setOnClickListener(this::showUserMenu);
-    }
-
-    // Function to show the dropdown menu
-    private void showUserMenu(View v) {
-        PopupMenu popup = new PopupMenu(this, v);
-        popup.getMenuInflater().inflate(R.menu.user_menu, popup.getMenu());
-
-        popup.setOnMenuItemClickListener(item -> {
-            int id = item.getItemId();
-            if (id == R.id.menu_player) {
-                startActivity(new Intent(UploadPage.this, PlayerInfoPage.class));
-                return true;
-            } else if (id == R.id.menu_logout) {
-                finish();
-                return true;
+        /*boxUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirect to UserMenu
+                Intent intent = new Intent(UploadPage.this, UserMenu.class);
+                startActivity(intent);
             }
-            return false;
-        });
-        popup.show();
-
-        /*ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
         });*/
     }
 }
