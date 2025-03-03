@@ -2,7 +2,7 @@
     <string name="app_name">Tennis Posture Analysis</string>
     <string name="video_analysis">Video Analysis</string>
     <string name="HomeImg">Home Image</string>
-    <string name="welcome">Welcome User!</string>
+    <string name="feedmsg">Feedback</string>
     <string name="coachFeed">Coach Feedback</string>
     <string name="comp">Comparisons</string>
     <string name="perf">Performance Graphs</string>

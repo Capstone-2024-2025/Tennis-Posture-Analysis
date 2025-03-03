@@ -22,9 +22,9 @@
     <string name="app_name">Tennis Posture Analysis</string>
     <string name="coachFeed">Coach Feedback</string>
     <string name="comp">Comparisons</string>
+    <string name="feedmsg">Feedback</string>
     <string name="perf">Performance Graphs</string>
     <string name="video_analysis">Video Analysis</string>
-    <string name="welcome">Welcome User!</string>
     <style name="Theme.TennisPostureAnalysis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

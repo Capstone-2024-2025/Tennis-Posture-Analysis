@@ -5,69 +5,72 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BEB7EBBA"
+    android:background="#7A4C7894"
+    android:isScrollContainer="true"
     tools:context=".FeedbackPage">
 
     <!-- Bottom navigation panel -->
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#94315F32"
+        android:layout_width="314dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/video_analysis"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView2"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/video_analysis" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="166dp"
         android:layout_height="31dp"
         android:text="@string/video_analysis"
-        android:textColor="#1F1E1E"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintHorizontal_bias="0.608"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.484" />
+        app:layout_constraintVertical_bias="0.329" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="166dp"
-        android:layout_height="31dp"
+        android:layout_width="264dp"
+        android:layout_height="36dp"
         android:text="@string/perf"
-        android:textColor="#1F1E1E"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
-        app:layout_constraintVertical_bias="0.532" />
+        app:layout_constraintVertical_bias="0.524" />
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="300dp"
-        android:layout_height="120dp"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#94315F32"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/perf"
+        android:src="@drawable/performance_graph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="80dp"
         android:background="#7C9A7E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
-            android:text="@string/welcome"
+            android:text="@string/feedmsg"
             android:textSize="18sp"
             android:textStyle="bold"
             android:translationX="15dp"
@@ -108,19 +111,19 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="172dp"
-        android:layout_height="171dp"
+        android:layout_width="173dp"
+        android:layout_height="118dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="7dp"
-        android:backgroundTint="#94315F32"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/coachFeed"
         app:layout_constraintBottom_toTopOf="@+id/navigation_bar"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/coach_feedback" />
 
     <TextView
         android:id="@+id/textView4"
@@ -128,30 +131,32 @@
         android:layout_height="31dp"
         android:layout_marginBottom="5dp"
         android:text="@string/coachFeed"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#1F1E1E"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.772" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="172dp"
-        android:layout_height="171dp"
+        android:layout_width="173dp"
+        android:layout_height="118dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="7dp"
-        android:backgroundTint="#94315F32"
+        android:background="@android:color/darker_gray"
         android:contentDescription="@string/comp"
         app:layout_constraintBottom_toTopOf="@+id/navigation_bar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.464"
+        app:srcCompat="@drawable/comparison" />
 
     <TextView
         android:id="@+id/textView5"
@@ -160,14 +165,15 @@
         android:layout_marginStart="15dp"
         android:layout_marginBottom="5dp"
         android:text="@string/comp"
-        android:textColor="#1F1E1E"
+        android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/fragment_container"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.772" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
@@ -276,35 +282,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:background="#7C9A7E"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <!-- UserIconBox -->
-        <LinearLayout
-            android:id="@+id/box_user"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="bottom|right"
-            android:orientation="vertical"
-            android:translationX="-10dp">
-
-            <ImageView
-                android:id="@+id/user_image"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:contentDescription="Home Image"
-                android:translationY="20dp"
-                app:srcCompat="@drawable/userpic" />
-
-        </LinearLayout>
-
-    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

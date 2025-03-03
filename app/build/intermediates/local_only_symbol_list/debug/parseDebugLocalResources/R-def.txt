@@ -8,6 +8,8 @@ color teal_200
 color teal_700
 color white
 drawable capture
+drawable coach_feedback
+drawable comparison
 drawable edittext_background
 drawable feedback
 drawable hidepassword
@@ -15,6 +17,7 @@ drawable home3
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable img
+drawable performance_graph
 drawable rounded_box
 drawable rounded_card
 drawable rounded_card_background
@@ -22,6 +25,7 @@ drawable toggle_button_selector
 drawable upload
 drawable upload2
 drawable userpic
+drawable video_analysis
 id Feedback_image
 id box_capture
 id box_feedback
@@ -107,9 +111,9 @@ string UpImg
 string app_name
 string coachFeed
 string comp
+string feedmsg
 string perf
 string video_analysis
-string welcome
 style Theme.TennisPostureAnalysis
 xml backup_rules
 xml data_extraction_rules
