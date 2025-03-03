@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.8.2" type="partial_results">
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.example.tennispostureanalysis.LogInPage"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <location id="R.drawable.hidepassword"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/hidepassword.png"/>
+        <location id="R.drawable.rounded_box"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/rounded_box.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="9"
+            endOffset="261"/>
+        <location id="R.drawable.upload2"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/upload2.png"/>
+        <location id="R.string.Up"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="14"
+            column="13"
+            startOffset="622"
+            endLine="14"
+            endColumn="22"
+            endOffset="631"/>
+        <location id="R.string.UpBox"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="15"
+            column="13"
+            startOffset="661"
+            endLine="15"
+            endColumn="25"
+            endOffset="673"/>
+        <location id="R.string.UpImg"
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="16"
+            column="13"
+            startOffset="707"
+            endLine="16"
+            endColumn="25"
+            endOffset="719"/>
+        <entry
+            name="model"
+            string="attr[colorPrimaryVariant(R)],color[white(U),black(U),purple_200(U),purple_500(U),purple_700(U),teal_200(U),teal_700(U)],drawable[capture(U),edittext_background(U),feedback(U),hidepassword(D),home3(U),ic_launcher_background(U),ic_launcher_foreground(U),ic_launcher_foreground_1(R),img(U),rounded_box(D),toggle_button_selector(U),upload(U),upload2(D),userpic(U)],id[preview_display_layout(U),no_camera_access_view(D),main(D),imageButton7(D),textView2(U),textView3(U),textView4(U),frameLayout2(U),imageButton2(D),user_icon(D),textView(D),imageButton5(U),navigation_bar(U),imageButton(U),fragment_container(U),textView5(U),box_home(U),home_image(D),textHome(D),box_capture(U),capture_image(D),textCapture(D),box_feedback(U),Feedback_image(D),textFeedback(D),box_user(U),user_image(U),guideline2(D),guideline(D),logo(U),title(U),form(U),btn_sign_in(U),email(D),password(U),togglePasswordVisibility(U),tv_forgot_password(D),tv_dont_have_account(U),tv_sign_up(D),frameLayout(U),save_button(U),full_name(U),height(U),handednessGroup(D),leftHanded(D),rightHanded(D),box_upload(U),upload_image(D),textUpload(D),done_button(U),done_text(D),info_button(U),logout_button(U),feet_picker(U),inches_picker(U),confirm_button(U)],layout[activity_capture_page(U),activity_feedback_page(U),activity_home_page(U),activity_log_in_page(U),activity_player_info_page(U),activity_upload_page(U),activity_user_menu(U),dialog_height_picker(U)],mipmap[ic_launcher(U),ic_launcher_round(U)],string[app_name(U),video_analysis(U),perf(U),HomeImg(U),welcome(U),coachFeed(U),comp(U),HomeBox(U),Home(U),CapBox(U),CapImg(U),Cap(U),FbBox(U),FbImg(U),Fb(U),Up(D),UpBox(D),UpImg(D)],style[Theme_TennisPostureAnalysis(U),TextAppearance_AppCompat_Body1(R),Theme_MaterialComponents_DayNight_NoActionBar(R)],xml[data_extraction_rules(U),backup_rules(U)],sample[avatars(R)];e^f,4f^59^1a^6f^1b^5a^1c^1d^5b^15^5c^5d^22^23^6b^24^25^5e^21^5f^c^60^61^62^8^63^64^65^a^66,50^22^c^8^a^15,51^10^34^33^36^9^35^3b,52^3d^1^2^12,53^22^c^8^13^a^15,54^3d^49,55^1^2,56^d^e,57^d^e,6a^6c^4^5^1^6^7^2^0^3;;;"/>
+    </map>
+
+</incidents>

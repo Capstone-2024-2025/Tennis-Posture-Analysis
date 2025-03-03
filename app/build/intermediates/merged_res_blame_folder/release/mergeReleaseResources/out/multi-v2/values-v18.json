@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.tennispostureanalysis.app-mergeReleaseResources-31:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\emily\\.gradle\\caches\\8.10.2\\transforms\\ba63504c75adbe4ccf3b912074417ca5\\transformed\\appcompat-1.7.0\\res\\values-v18\\values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

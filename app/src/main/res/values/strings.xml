@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Tennis Posture Analysis</string>
+    <string name="video_analysis">Video Analysis</string>
+    <string name="HomeImg">Home Image</string>
+    <string name="feedmsg">Feedback</string>
+    <string name="coachFeed">Coach Feedback</string>
+    <string name="comp">Comparisons</string>
+    <string name="perf">Performance Graphs</string>
+    <string name="HomeBox">Home Box</string>
+    <string name="Home">Home</string>
+    <string name="CapBox">Capture Box</string>
+    <string name="CapImg">Capture Image</string>
+    <string name="Cap">Capture</string>
+    <string name="Up">Upload</string>
+    <string name="UpBox">Upload Box</string>
+    <string name="UpImg">Upload Image</string>
+    <string name="Fb">Feedback</string>
+    <string name="FbImg">Feedback Image</string>
+    <string name="FbBox">Feedback Box</string>
 </resources>
