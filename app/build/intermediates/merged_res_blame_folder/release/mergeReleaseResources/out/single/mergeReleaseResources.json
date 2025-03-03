@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_feedback.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/feedback.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_userpic.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/userpic.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_user_menu.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_user_menu.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_upload.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/upload.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_home_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_home3.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/home3.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_edittext_background.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/edittext_background.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_upload_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_upload_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_feedback_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_feedback_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_capture.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/capture.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_upload2.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/upload2.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_rounded_box.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/rounded_box.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_img.jpeg.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/img.jpeg"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_dialog_height_picker.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/dialog_height_picker.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/xml_backup_rules.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_player_info_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_player_info_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_log_in_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_log_in_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_toggle_button_selector.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/toggle_button_selector.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/drawable_hidepassword.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/drawable/hidepassword.png"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/layout_activity_capture_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/layout/activity_capture_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-release-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    }
+]
