@@ -15,6 +15,7 @@ MERGED from [androidx.activity:activity:1.10.0] C:\Users\emily\.gradle\caches\8.
 MERGED from [androidx.camera:camera-camera2:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\adf7810c4aec90a92d9ad4ca72d18c4f\transformed\camera-camera2-1.0.0-beta10\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\99c97ab729b4a83c61d666b0056ea59e\transformed\camera-lifecycle-1.0.0-beta10\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.camera:camera-core:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\0b928802bc5852d515e4832af354500f\transformed\camera-core-1.0.0-beta10\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\bc530f07199ca0dbb0eb02d0aaaa8165\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\emily\.gradle\caches\8.10.2\transforms\bb68cb4322224c0ce37e0d4ad5a87976\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.5.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\01bb24e8b26d1327b2aad6c49de071c0\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\81cab7d725bfecd1aba8aa35d7105f01\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -193,6 +194,8 @@ MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta10] C:\Users\emily\.grad
 MERGED from [androidx.camera:camera-lifecycle:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\99c97ab729b4a83c61d666b0056ea59e\transformed\camera-lifecycle-1.0.0-beta10\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-core:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\0b928802bc5852d515e4832af354500f\transformed\camera-core-1.0.0-beta10\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.camera:camera-core:1.0.0-beta10] C:\Users\emily\.gradle\caches\8.10.2\transforms\0b928802bc5852d515e4832af354500f\transformed\camera-core-1.0.0-beta10\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\bc530f07199ca0dbb0eb02d0aaaa8165\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\bc530f07199ca0dbb0eb02d0aaaa8165\transformed\MPAndroidChart-v3.1.0\AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\emily\.gradle\caches\8.10.2\transforms\bb68cb4322224c0ce37e0d4ad5a87976\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\emily\.gradle\caches\8.10.2\transforms\bb68cb4322224c0ce37e0d4ad5a87976\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.transition:transition:1.5.0] C:\Users\emily\.gradle\caches\8.10.2\transforms\01bb24e8b26d1327b2aad6c49de071c0\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44

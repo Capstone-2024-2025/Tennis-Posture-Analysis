@@ -3117,6 +3117,8 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable rounded_box
+drawable rounded_card
+drawable rounded_card_background
 drawable test_level_drawable
 drawable toggle_button_selector
 drawable tooltip_frame_dark
@@ -3352,8 +3354,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id guideline
-id guideline2
 id handednessGroup
 id header_title
 id height
@@ -3395,7 +3395,10 @@ id leftToRight
 id legacy
 id line1
 id line3
+id lineChart
 id linear
+id linearLayout
+id linearLayout2
 id listMode
 id list_item
 id logo
@@ -3522,6 +3525,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recent_session_img1
+id recent_session_img2
 id rectangles
 id report_drawn
 id reverseSawtooth
@@ -3634,6 +3639,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id tip_text
 id title
 id titleDividerNoCustom
 id title_template
