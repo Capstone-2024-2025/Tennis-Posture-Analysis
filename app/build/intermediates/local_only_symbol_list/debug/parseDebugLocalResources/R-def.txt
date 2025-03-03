@@ -16,6 +16,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable img
 drawable rounded_box
+drawable rounded_card
+drawable rounded_card_background
 drawable toggle_button_selector
 drawable upload
 drawable upload2
@@ -36,15 +38,17 @@ id feet_picker
 id form
 id fragment_container
 id frameLayout
+id frameLayout2
 id full_name
-id guideline
-id guideline2
 id handednessGroup
 id height
 id home_image
 id inches_picker
 id info_button
 id leftHanded
+id lineChart
+id linearLayout
+id linearLayout2
 id logo
 id logout_button
 id main
@@ -52,6 +56,8 @@ id navigation_bar
 id no_camera_access_view
 id password
 id preview_display_layout
+id recent_session_img1
+id recent_session_img2
 id rightHanded
 id save_button
 id textCapture
@@ -59,6 +65,7 @@ id textFeedback
 id textHome
 id textUpload
 id textView
+id tip_text
 id title
 id togglePasswordVisibility
 id tv_dont_have_account
