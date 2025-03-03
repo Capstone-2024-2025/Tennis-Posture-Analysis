@@ -35,7 +35,6 @@
     <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="Theme.MaterialComponents.NoActionBar.Bridge"/>
     <style name="Theme.TennisPostureAnalysis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
-    
         <item name="colorPrimary">@color/purple_200</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>

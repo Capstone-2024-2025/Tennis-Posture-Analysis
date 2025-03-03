@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Sun Mar 02 17:38:18 PST 2025
 base.0=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/dex/debug/mergeLibDexDebug/1/classes.dex
@@ -11,6 +12,13 @@ base.6=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/inte
 base.7=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/dex/debug/mergeLibDexDebug/8/classes.dex
 base.8=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/dex/debug/mergeLibDexDebug/9/classes.dex
 base.9=/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+=======
+#Sat Mar 01 15:51:18 PST 2025
+base.0=C\:\\Users\\emily\\Documents\\SE481\\Tennis-Posture-Analysis\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\emily\\Documents\\SE481\\Tennis-Posture-Analysis\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\emily\\Documents\\SE481\\Tennis-Posture-Analysis\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.3=C\:\\Users\\emily\\Documents\\SE481\\Tennis-Posture-Analysis\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> origin/main
 path.0=classes.dex
 path.1=1/classes.dex
 path.10=2/classes.dex

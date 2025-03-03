@@ -6546,7 +6546,6 @@
   </style>
     <style name="Theme.TennisPostureAnalysis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
-    
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -10229,14 +10228,6 @@
     <declare-styleable name="ButtonBarLayout">
         
         <attr format="boolean" name="allowStacking"/>
-    </declare-styleable>
-    <declare-styleable name="CameraBridgeViewBase">
-       <attr format="boolean" name="show_fps"/>
-       <attr format="integer" name="camera_id">
-          <enum name="any" value="-1"/>
-          <enum name="back" value="99"/>
-          <enum name="front" value="98"/>
-       </attr>
     </declare-styleable>
     <declare-styleable name="Capability">
         

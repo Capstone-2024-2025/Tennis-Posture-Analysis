@@ -9,8 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">Tennis Posture Analysis</string>
     <style name="Theme.TennisPostureAnalysis" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+<<<<<<< HEAD
 
     
+=======
+        
+>>>>>>> origin/main
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
