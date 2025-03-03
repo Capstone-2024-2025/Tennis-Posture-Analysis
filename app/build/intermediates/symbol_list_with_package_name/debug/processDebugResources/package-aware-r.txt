@@ -231,6 +231,7 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr camera_id
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -1055,6 +1056,7 @@ attr showMotionSpec
 attr showPaths
 attr showText
 attr showTitle
+attr show_fps
 attr shrinkMotionSpec
 attr sideSheetDialogTheme
 attr sideSheetModalStyle
@@ -3018,6 +3020,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable edittext_background
+drawable handheld
 drawable hidepassword
 drawable home3
 drawable ic_arrow_back_black_24
@@ -3114,6 +3117,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable phonestand
 drawable rounded_box
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3125,8 +3129,11 @@ id BOTTOM_START
 id CTRL
 id FUNCTION
 id Feedback_image
+id HandheldText
 id META
 id NO_DEBUG
+id PhoneStandText
+id Prompt
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3190,6 +3197,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_text
 id actions
+id activity_capture_page
 id activity_chooser_view_content
 id add
 id alertTitle
@@ -3201,6 +3209,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id any
 id arc
 id asConfigured
 id async
@@ -3209,6 +3218,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id axisRelative
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3227,6 +3237,8 @@ id box_home
 id box_upload
 id btn_sign_in
 id buttonPanel
+id button_handheld
+id button_stand
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3286,6 +3298,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id distance_overlay
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3330,6 +3343,7 @@ id forever
 id form
 id fragment_container
 id fragment_container_view_tag
+id front
 id frost
 id fullscreen_header
 id ghost_view
@@ -3340,6 +3354,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id handheld_img
 id header_title
 id hide_ime_id
 id hideable
@@ -3450,7 +3465,6 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
-id no_camera_access_view
 id none
 id normal
 id north
@@ -3489,6 +3503,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phonestand_img
 id pin
 id position
 id postLayout
@@ -3498,6 +3513,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id record_button
 id rectangles
 id report_drawn
 id reverseSawtooth
@@ -3629,6 +3645,7 @@ id upload_image
 id useLogo
 id vertical
 id vertical_only
+id video_view
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3761,10 +3778,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_capture_page
+layout activity_capture_selection
 layout activity_feedback_page
 layout activity_home_page
 layout activity_log_in_page
 layout activity_upload_page
+layout activity_video_preview
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -5167,6 +5186,7 @@ styleable BottomAppBar addElevationShadow backgroundTint elevation fabAlignmentM
 styleable BottomNavigationView android_minHeight compatShadowEnabled itemHorizontalTranslationEnabled shapeAppearance shapeAppearanceOverlay
 styleable BottomSheetBehavior_Layout android_maxWidth android_maxHeight android_elevation backgroundTint behavior_draggable behavior_expandedOffset behavior_fitToContents behavior_halfExpandedRatio behavior_hideable behavior_peekHeight behavior_saveFlags behavior_significantVelocityThreshold behavior_skipCollapsed gestureInsetBottomIgnored marginLeftSystemWindowInsets marginRightSystemWindowInsets marginTopSystemWindowInsets paddingBottomSystemWindowInsets paddingLeftSystemWindowInsets paddingRightSystemWindowInsets paddingTopSystemWindowInsets shapeAppearance shapeAppearanceOverlay shouldRemoveExpandedCorners
 styleable ButtonBarLayout allowStacking
+styleable CameraBridgeViewBase camera_id show_fps
 styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Carousel carousel_alignment carousel_backwardTransition carousel_emptyViewsBehavior carousel_firstView carousel_forwardTransition carousel_infinite carousel_nextState carousel_previousState carousel_touchUpMode carousel_touchUp_dampeningFactor carousel_touchUp_velocityThreshold

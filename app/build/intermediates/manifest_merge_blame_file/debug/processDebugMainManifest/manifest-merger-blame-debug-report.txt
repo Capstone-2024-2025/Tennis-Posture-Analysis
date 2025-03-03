@@ -7,164 +7,200 @@
 7    <uses-sdk
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="35" />
-10    <!-- For using the Camera -->
-11    <uses-permission android:name="android.permission.CAMERA" /> <!-- For mediapipe -->
-11-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:5:5-65
-11-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:5:22-62
-12    <uses-feature android:name="android.hardware.camera" />
-12-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:6:5-60
-12-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:6:19-57
-13    <uses-feature android:name="android.hardware.camera.autofocus" />
-13-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:7:5-70
-13-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:7:19-67
-14    <uses-feature
-14-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:8:5-10:35
-15        android:glEsVersion="0x00020000"
-15-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:9:9-41
-16        android:required="true" />
-16-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:10:9-32
+10    <!-- Required for starting foreground services in general -->
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required for foreground services using media projection -->
+11-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:5:5-77
+11-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:5:22-74
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" /> <!-- For using the Camera -->
+12-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:6:5-94
+12-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:6:22-91
+13    <uses-permission android:name="android.permission.CAMERA" /> <!-- For mediapipe -->
+13-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:7:5-65
+13-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:7:22-62
+14    <!-- Optional: If you plan to record audio with video -->
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Optional: If you plan to save videos to public external storage -->
+15-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:9:5-71
+15-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:9:22-68
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:10:5-81
+16-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:10:22-78
 17
-18    <permission
-18-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
-19        android:name="com.example.tennispostureanalysis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-19-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
-20        android:protectionLevel="signature" />
-20-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
-21
-22    <uses-permission android:name="com.example.tennispostureanalysis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-22-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
-22-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+18    <uses-feature android:name="android.hardware.camera" />
+18-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:12:5-60
+18-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:12:19-57
+19    <uses-feature android:name="android.hardware.camera.autofocus" />
+19-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:13:5-70
+19-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:13:19-67
+20    <uses-feature
+20-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:14:5-16:35
+21        android:glEsVersion="0x00020000"
+21-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:15:9-41
+22        android:required="true" />
+22-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:16:9-32
 23
-24    <application
-24-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:12:5-43:19
-25        android:allowBackup="true"
-25-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:13:9-35
-26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/53e0f3f7ab683014a63a61d9b9d90c07/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
-27        android:dataExtractionRules="@xml/data_extraction_rules"
-27-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:14:9-65
-28        android:debuggable="true"
-29        android:extractNativeLibs="false"
-30        android:fullBackupContent="@xml/backup_rules"
-30-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:15:9-54
-31        android:icon="@mipmap/ic_launcher"
-31-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:16:9-43
-32        android:label="@string/app_name"
-32-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:17:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:18:9-54
-34        android:supportsRtl="true"
-34-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:19:9-35
-35        android:testOnly="true"
-36        android:theme="@style/Theme.TennisPostureAnalysis" >
-36-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:20:9-59
-37        <activity
-37-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:22:9-24:40
-38            android:name="com.example.tennispostureanalysis.CapturePage"
-38-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:23:13-40
-39            android:exported="false" />
-39-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:24:13-37
-40        <activity
-40-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:25:9-27:40
-41            android:name="com.example.tennispostureanalysis.FeedbackPage"
-41-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:26:13-41
-42            android:exported="false" />
-42-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:27:13-37
+24    <permission
+24-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+25        android:name="com.example.tennispostureanalysis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.example.tennispostureanalysis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:18:5-61:19
+31        android:allowBackup="true"
+31-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:19:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.13.0] /Users/brian/.gradle/caches/8.10.2/transforms/f6132c3fab4cf878bbf81cfd55424b9d/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+33        android:dataExtractionRules="@xml/data_extraction_rules"
+33-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:20:9-65
+34        android:debuggable="true"
+35        android:extractNativeLibs="false"
+36        android:fullBackupContent="@xml/backup_rules"
+36-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:21:9-54
+37        android:icon="@mipmap/ic_launcher"
+37-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:22:9-43
+38        android:label="@string/app_name"
+38-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:23:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:24:9-54
+40        android:supportsRtl="true"
+40-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:25:9-35
+41        android:testOnly="true"
+42        android:theme="@style/Theme.TennisPostureAnalysis" >
+42-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:26:9-59
 43        <activity
 43-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:28:9-30:40
-44            android:name="com.example.tennispostureanalysis.UploadPage"
-44-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:29:13-39
+44            android:name="com.example.tennispostureanalysis.VideoPreviewActivity"
+44-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:29:13-49
 45            android:exported="false" />
 45-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:30:13-37
-46        <activity
-46-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:31:9-33:40
-47            android:name="com.example.tennispostureanalysis.HomePage"
-47-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:32:13-37
-48            android:exported="false" />
-48-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:33:13-37
-49        <activity
-49-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:34:9-42:20
-50            android:name="com.example.tennispostureanalysis.LogInPage"
-50-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:35:13-38
-51            android:exported="true" >
-51-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:36:13-36
-52            <intent-filter>
-52-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:37:13-41:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:38:17-69
-53-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:38:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:40:17-77
-55-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:40:27-74
-56            </intent-filter>
-57        </activity>
-58
-59        <provider
-59-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-61            android:authorities="com.example.tennispostureanalysis.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
-62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
-63            <meta-data
-63-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/bb8cf479e26c3d773d7a79dff745e29b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/64391a074df49c6bd225f8e022185bfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/64391a074df49c6bd225f8e022185bfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/64391a074df49c6bd225f8e022185bfa/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-69            <meta-data
-69-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
-70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-70-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
-71                android:value="androidx.startup" />
-71-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
-72        </provider>
-73
-74        <receiver
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
-75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-75-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
-76            android:directBootAware="false"
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
-77            android:enabled="true"
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
-78            android:exported="true"
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
-79            android:permission="android.permission.DUMP" >
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
-81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
-81-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
-82            </intent-filter>
-83            <intent-filter>
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
-84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
-85            </intent-filter>
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
-87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
-88            </intent-filter>
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
-90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/85ffa77242f081cb1fca2d119b14ec34/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
-91            </intent-filter>
-92        </receiver>
-93    </application>
-94
-95</manifest>
+46
+47        <service
+47-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:32:9-35:63
+48            android:name="com.example.tennispostureanalysis.ScreenCaptureService"
+48-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:33:13-49
+49            android:exported="false"
+49-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:34:13-37
+50            android:foregroundServiceType="mediaProjection" />
+50-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:35:13-60
+51
+52        <activity
+52-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:37:9-39:40
+53            android:name="com.example.tennispostureanalysis.CaptureSelection"
+53-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:38:13-45
+54            android:exported="false" />
+54-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:39:13-37
+55        <activity
+55-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:40:9-42:40
+56            android:name="com.example.tennispostureanalysis.CapturePage"
+56-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:41:13-40
+57            android:exported="false" />
+57-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:42:13-37
+58        <activity
+58-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:43:9-45:40
+59            android:name="com.example.tennispostureanalysis.FeedbackPage"
+59-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:44:13-41
+60            android:exported="false" />
+60-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:45:13-37
+61        <activity
+61-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:46:9-48:40
+62            android:name="com.example.tennispostureanalysis.UploadPage"
+62-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:47:13-39
+63            android:exported="false" />
+63-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:48:13-37
+64        <activity
+64-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:49:9-51:40
+65            android:name="com.example.tennispostureanalysis.HomePage"
+65-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:50:13-37
+66            android:exported="false" />
+66-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:51:13-37
+67        <activity
+67-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:52:9-60:20
+68            android:name="com.example.tennispostureanalysis.LogInPage"
+68-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:53:13-38
+69            android:exported="true" >
+69-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:54:13-36
+70            <intent-filter>
+70-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:55:13-59:29
+71                <action android:name="android.intent.action.MAIN" />
+71-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:56:17-69
+71-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:56:25-66
+72
+73                <category android:name="android.intent.category.LAUNCHER" />
+73-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:58:17-77
+73-->/Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/src/main/AndroidManifest.xml:58:27-74
+74            </intent-filter>
+75        </activity>
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+79            android:authorities="com.example.tennispostureanalysis.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.3.0] /Users/brian/.gradle/caches/8.10.2/transforms/8829972743cf9420c79acde9090e1d7d/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/e49eb6ef7d8020fcf6a4262139ee20bf/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/e49eb6ef7d8020fcf6a4262139ee20bf/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/brian/.gradle/caches/8.10.2/transforms/e49eb6ef7d8020fcf6a4262139ee20bf/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/brian/.gradle/caches/8.10.2/transforms/7ead5251c70eab43508e552eed941c6c/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>

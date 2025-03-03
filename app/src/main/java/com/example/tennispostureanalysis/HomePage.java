@@ -31,7 +31,7 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Redirect to CapturePage
-                Intent intent = new Intent(HomePage.this, CapturePage.class);
+                Intent intent = new Intent(HomePage.this, CaptureSelection.class);
                 startActivity(intent);
             }
         });

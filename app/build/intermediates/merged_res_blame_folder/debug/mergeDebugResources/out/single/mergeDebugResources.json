@@ -1,114 +1,126 @@
 [
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_upload2.png.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/upload2.png"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_phonestand.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/phonestand.png"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_feedback_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_feedback_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_upload_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_upload_page.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_rounded_box.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/rounded_box.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_capture_page.xml.flat",
         "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_capture_page.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_home_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_home_page.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/xml/data_extraction_rules.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_edittext_background.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/edittext_background.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_hidepassword.png.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/hidepassword.png"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_hidepassword.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/hidepassword.png"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_handheld.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/handheld.png"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_img.jpeg.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/img.jpeg"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_home3.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/home3.png"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_feedback_page.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_feedback_page.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_capture_selection.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_capture_selection.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/xml_backup_rules.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_log_in_page.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_log_in_page.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_log_in_page.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_log_in_page.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_capture_page.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_capture_page.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_home_page.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_home_page.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_rounded_box.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/rounded_box.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/drawable_upload2.png.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/drawable/upload2.png"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_img.jpeg.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/img.jpeg"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/xml_backup_rules.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_home3.png.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/home3.png"
-    },
-    {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/layout_activity_upload_page.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/layout/activity_upload_page.xml"
-    },
-    {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
-        "merged": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-debug-33:/drawable_edittext_background.xml.flat",
-        "source": "/Users/brian/.gradle/daemon/8.10.2/com.example.tennispostureanalysis.app-main-35:/drawable/edittext_background.xml"
+        "merged": "com.example.tennispostureanalysis.app-debug-33:/layout_activity_video_preview.xml.flat",
+        "source": "com.example.tennispostureanalysis.app-main-35:/layout/activity_video_preview.xml"
     }
 ]

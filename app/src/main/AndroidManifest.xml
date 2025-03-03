@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- For using the Camera -->
+    <!-- Required for starting foreground services in general -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required for foreground services using media projection -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" /> <!-- For using the Camera -->
     <uses-permission android:name="android.permission.CAMERA" /> <!-- For mediapipe -->
+    <!-- Optional: If you plan to record audio with video -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- Optional: If you plan to save videos to public external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-feature
@@ -19,6 +25,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TennisPostureAnalysis"
         tools:targetApi="31">
+        <activity
+            android:name=".VideoPreviewActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".ScreenCaptureService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+
+        <activity
+            android:name=".CaptureSelection"
+            android:exported="false" />
         <activity
             android:name=".CapturePage"
             android:exported="false" />
