@@ -1,5 +1,0 @@
-com.example.tennispostureanalysis.test.app-core-1.6.1-0 /Users/brian/.gradle/caches/8.10.2/transforms/800ffc57d6f0941629e852e95bbb07f4/transformed/core-1.6.1/res
-com.example.tennispostureanalysis.test.app-androidTest-1 /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/generated/res/resValues/androidTest/debug
-com.example.tennispostureanalysis.test.app-mergeDebugAndroidTestResources-2 /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.tennispostureanalysis.test.app-mergeDebugAndroidTestResources-3 /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.tennispostureanalysis.test.app-debugAndroidTest-4 /Users/brian/AndroidStudioProjects/Tennis-Posture-Analysis/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources
