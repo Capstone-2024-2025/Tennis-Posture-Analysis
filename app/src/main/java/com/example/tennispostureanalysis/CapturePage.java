@@ -56,7 +56,7 @@ public class CapturePage extends AppCompatActivity {
     private static final String OUTPUT_VIDEO_STREAM_NAME = "output_video";
     private static final String OUTPUT_LANDMARKS_STREAM_NAME = "pose_landmarks";
     private static final int NUM_HANDS = 2;
-    private static final CameraHelper.CameraFacing CAMERA_FACING = CameraHelper.CameraFacing.BACK;
+    private static final CameraHelper.CameraFacing CAMERA_FACING = CameraHelper.CameraFacing.FRONT;
     // Flips the camera-preview frames vertically before sending them into FrameProcessor to be
     // processed in a MediaPipe graph, and flips the processed frames back when they are displayed.
     // This is needed because OpenGL represents images assuming the image origin is at the bottom-left
@@ -215,7 +215,7 @@ public class CapturePage extends AppCompatActivity {
                 surfaceTexture -> {
                     onCameraStarted(surfaceTexture);
                 });
-        CameraHelper.CameraFacing cameraFacing = CameraHelper.CameraFacing.BACK;
+        CameraHelper.CameraFacing cameraFacing = CameraHelper.CameraFacing.FRONT;
         cameraHelper.startCamera(
                 this, cameraFacing, /*unusedSurfaceTexture=*/ null, cameraTargetResolution());
     }

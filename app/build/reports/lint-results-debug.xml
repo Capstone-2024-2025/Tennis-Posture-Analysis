@@ -1,0 +1,1796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.8.2">
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of com.google.protobuf:protobuf-java than 3.11.4 is available: 3.22.3"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &apos;com.google.protobuf:protobuf-java:3.11.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="51"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.camera:camera-core than 1.0.0-beta10 is available: 1.4.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &quot;androidx.camera:camera-core:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="55"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.camera:camera-camera2 than 1.0.0-beta10 is available: 1.4.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &quot;androidx.camera:camera-camera2:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="56"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.camera:camera-lifecycle than 1.0.0-beta10 is available: 1.4.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="    implementation &quot;androidx.camera:camera-lifecycle:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="57"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.activity:activity than 1.10.0 is available: 1.10.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="activity = &quot;1.10.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.activity:activity than 1.10.0 is available: 1.10.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="activity = &quot;1.10.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.activity:activity than 1.10.0 is available: 1.10.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="activity = &quot;1.10.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        severity="Warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.0 is available: 2.2.1"
+        category="Correctness"
+        priority="4"
+        summary="Obsolete Gradle Dependency"
+        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
+        errorLine1="constraintlayout = &quot;2.2.0&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\gradle\libs.versions.toml"
+            line="9"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;24dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="51"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;20dp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="64"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="73"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;20dp&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="86"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="            android:textSize=&quot;15dp&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="95"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="SpUsage"
+        severity="Warning"
+        message="Should use &quot;`sp`&quot; instead of &quot;`dp`&quot; for text sizes"
+        category="Correctness"
+        priority="3"
+        summary="Using `dp` instead of `sp` for text sizes"
+        explanation="When setting text sizes, you should normally use `sp`, or &quot;scale-independent pixels&quot;. This is like the `dp` unit, but it is also scaled by the user&apos;s font size preference. It is recommend you use this unit when specifying font sizes, so they will be adjusted for both the screen density and the user&apos;s preference.&#xA;&#xA;There **are** cases where you might need to use `dp`; typically this happens when the text is in a container with a specific dp-size. This will prevent the text from spilling outside the container. Note however that this means that the user&apos;s font size settings are not respected, so consider adjusting the layout itself to be more flexible."
+        url="https://developer.android.com/training/multiscreen/screendensities.html"
+        urls="https://developer.android.com/training/multiscreen/screendensities.html"
+        errorLine1="                android:textSize=&quot;23dp&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="36"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        severity="Warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        category="Performance"
+        priority="3"
+        summary="Missing `baselineAligned` attribute"
+        explanation="When a `LinearLayout` is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster."
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_feedback_page.xml"
+            line="184"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        severity="Warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        category="Performance"
+        priority="3"
+        summary="Missing `baselineAligned` attribute"
+        explanation="When a `LinearLayout` is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster."
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="22"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        severity="Warning"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        category="Performance"
+        priority="3"
+        summary="Missing `baselineAligned` attribute"
+        explanation="When a `LinearLayout` is used to distribute the space proportionally between nested layouts, the baseline alignment property should be turned off to make the layout computation faster."
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="22"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#4E734E` with a theme that also paints a background (inferred theme is `@style/Theme.TennisPostureAnalysis`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#4E734E&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_feedback_page.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#D6E7D2` with a theme that also paints a background (inferred theme is `@style/Theme.TennisPostureAnalysis`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#D6E7D2&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `#FDFDFD` with a theme that also paints a background (inferred theme is `@style/Theme.TennisPostureAnalysis`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;#FDFDFD&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        severity="Warning"
+        message="Possible overdraw: Root element paints background `@color/white` with a theme that also paints a background (inferred theme is `@style/Theme.TennisPostureAnalysis`)"
+        category="Performance"
+        priority="3"
+        summary="Overdraw: Painting regions more than once"
+        explanation="If you set a background drawable on a root view, then you should use a custom theme where the theme background is null. Otherwise, the theme background will be painted first, only to have your custom background completely cover it; this is called &quot;overdraw&quot;.&#xA;&#xA;NOTE: This detector relies on figuring out which layouts are associated with which activities based on scanning the Java code, and it&apos;s currently doing that using an inexact pattern matching algorithm. Therefore, it can incorrectly conclude which activity the layout is associated with and then wrongly complain that a background-theme is hidden.&#xA;&#xA;If you want your custom background on multiple pages, then you should consider making a custom theme with your custom background and just using that theme instead of a root element background.&#xA;&#xA;Of course it&apos;s possible that your custom drawable is translucent and you want it to be mixed with the background. However, you will get better performance if you pre-mix the background with your drawable and use that resulting image or color as a custom theme background instead."
+        errorLine1="    android:background=&quot;@color/white&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\dialog_height_picker.xml"
+            line="5"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.hidepassword` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\hidepassword.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.rounded_box` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\rounded_box.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.Up` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;Up&quot;>Upload&lt;/string>"
+        errorLine2="            ~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\values\strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.UpBox` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;UpBox&quot;>Upload Box&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\values\strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.string.UpImg` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,"
+        errorLine1="    &lt;string name=&quot;UpImg&quot;>Upload Image&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\values\strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource `R.drawable.upload2` appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Unused resources"
+        explanation="Unused resources make applications larger and slow down builds.&#xA;&#xA;&#xA;The unused resource check can ignore tests. If you want to include resources that are only referenced from tests, consider packaging them in a test source set instead.&#xA;&#xA;You can include test sources in the unused resource check by setting the system property lint.unused-resources.include-tests =true, and to exclude them (usually for performance reasons), use lint.unused-resources.exclude-tests =true.&#xA;,">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\upload2.png"/>
+    </issue>
+
+    <issue
+        id="UselessLeaf"
+        severity="Warning"
+        message="This `LinearLayout` view is unnecessary (no children, no `background`, no `id`, no `style`)"
+        category="Performance"
+        priority="2"
+        summary="Unnecessary leaf layout"
+        explanation="A layout that has no children or no background can often be removed (since it is invisible) for a flatter and more efficient layout hierarchy."
+        errorLine1="    &lt;LinearLayout"
+        errorLine2="     ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="103"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        severity="Warning"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        category="Performance"
+        priority="2"
+        summary="Unnecessary parent layout"
+        explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_feedback_page.xml"
+            line="289"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        severity="Warning"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        category="Performance"
+        priority="2"
+        summary="Unnecessary parent layout"
+        explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="155"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        severity="Warning"
+        message="This `LinearLayout` layout or its `FrameLayout` parent is possibly unnecessary; transfer the `background` attribute to the other view"
+        category="Performance"
+        priority="2"
+        summary="Unnecessary parent layout"
+        explanation="A layout with children that has no siblings, is not a scrollview or a root layout, and does not have a background, can be removed and have its children moved directly into the parent for a flatter and more efficient layout hierarchy."
+        errorLine1="        &lt;LinearLayout"
+        errorLine2="         ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="22"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/capture.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\capture.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/feedback.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\feedback.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/hidepassword.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\hidepassword.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/home3.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\home3.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/img.jpeg` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\img.jpeg"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/upload.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\upload.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/upload2.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\upload2.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        severity="Warning"
+        message="Found bitmap drawable `res/drawable/userpic.png` in densityless folder"
+        category="Usability:Icons"
+        priority="5"
+        summary="Image defined in density-independent drawable folder"
+        explanation="The res/drawable folder is intended for density-independent graphics such as shapes defined in XML. For bitmaps, move it to `drawable-mdpi` and consider providing higher and lower resolution versions in `drawable-ldpi`, `drawable-hdpi` and `drawable-xhdpi`. If the icon **really** is density independent (for example a solid color) you can place it in `drawable-nodpi`."
+        url="https://developer.android.com/guide/practices/screens_support.html"
+        urls="https://developer.android.com/guide/practices/screens_support.html">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\drawable\userpic.png"/>
+    </issue>
+
+    <issue
+        id="TextFields"
+        severity="Warning"
+        message="This text field does not specify an `inputType`"
+        category="Usability"
+        priority="5"
+        summary="Missing `inputType`"
+        explanation="Providing an `inputType` attribute on a text field improves usability because depending on the data to be input, optimized keyboards can be shown to the user (such as just digits and parentheses for a phone number). &#xA;&#xA;The lint detector also looks at the `id` of the view, and if the id offers a hint of the purpose of the field (for example, the `id` contains the phrase `phone` or `email`), then lint will also ensure that the `inputType` contains the corresponding type attributes.&#xA;&#xA;If you really want to keep the text field generic, you can suppress this warning by setting `inputType=&quot;text&quot;`."
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="76"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="53"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="64"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="55"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        severity="Warning"
+        message="Missing `autofillHints` attribute"
+        category="Usability"
+        priority="3"
+        summary="Use Autofill"
+        explanation="Specify an `autofillHints` attribute when targeting SDK version 26 or higher or explicitly specify that the view is not important for autofill. Your app can help an autofill service classify the data correctly by providing the meaning of each view that could be autofillable, such as views representing usernames, passwords, credit card fields, email addresses, etc.&#xA;&#xA;The hints can have any value, but it is recommended to use predefined values like &apos;username&apos; for a username or &apos;creditCardNumber&apos; for a credit card number. For a list of all predefined autofill hint constants, see the `AUTOFILL_HINT_` constants in the `View` reference at https://developer.android.com/reference/android/view/View.html.&#xA;&#xA;You can mark a view unimportant for autofill by specifying an `importantForAutofill` attribute on that view or a parent view. See https://developer.android.com/reference/android/view/View.html#setImportantForAutofill(int)."
+        url="https://developer.android.com/guide/topics/text/autofill.html"
+        urls="https://developer.android.com/guide/topics/text/autofill.html"
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="76"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="UnnecessaryRequiredFeature"
+        severity="Warning"
+        message="Consider whether this feature (`android.hardware.camera.autofocus`) really is required for the app to function; you can set `android:required=&quot;false&quot;` to indicate that the feature is used but not required"
+        category="Usability"
+        priority="2"
+        summary="Potentially unnecessary required feature"
+        explanation="Avoid unnecessarily requiring features that may exclude your app from being served onto devices it might otherwise support.&#xA;&#xA;Consider whether your application can function adequately without restrictive feature requirements by setting these to `android:required=&quot;false&quot;`. By doing so, you can increase the availability of your app to a broader set of devices, including tablets, laptops and cars."
+        errorLine1="    &lt;uses-feature android:name=&quot;android.hardware.camera.autofocus&quot; />"
+        errorLine2="                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\AndroidManifest.xml"
+            line="7"
+            column="33"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.flogger:flogger:0.3.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="46"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.flogger:flogger-system-backend:0.3.1&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="47"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.code.findbugs:jsr305:3.0.2&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="48"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.guava:guava:27.0.1-android&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="49"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.guava:guava:27.0.1-android&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="50"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &apos;com.google.protobuf:protobuf-java:3.11.4&apos;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="51"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &quot;androidx.camera:camera-core:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="55"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &quot;androidx.camera:camera-camera2:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="56"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        severity="Warning"
+        message="Use version catalog instead"
+        category="Productivity"
+        priority="4"
+        summary="Use TOML Version Catalog Instead"
+        explanation="If your project is using a `libs.versions.toml` file, you should place all Gradle dependencies in the TOML file. This lint check looks for version declarations outside of the TOML file and suggests moving them (and in the IDE, provides a quickfix to performing the operation automatically)."
+        errorLine1="    implementation &quot;androidx.camera:camera-lifecycle:$camerax_version&quot;"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\build.gradle"
+            line="57"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        severity="Warning"
+        message="Missing `contentDescription` attribute on image"
+        category="Accessibility"
+        priority="3"
+        summary="Image without `contentDescription`"
+        explanation="Non-textual widgets like ImageViews and ImageButtons should use the `contentDescription` attribute to specify a textual description of the widget such that screen readers and other accessibility tools can adequately describe the user interface.&#xA;&#xA;Note that elements in application screens that are purely decorative and do not provide any content or enable a user action should not have accessibility content descriptions. In this case, set their descriptions to `@null`. If your app&apos;s minSdkVersion is 16 or higher, you can instead set these graphical elements&apos; `android:importantForAccessibility` attributes to `no`.&#xA;&#xA;Note that for text fields, you should not set both the `hint` and the `contentDescription` attributes since the hint will never be shown. Just set the `hint`."
+        url="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        urls="https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="13"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        severity="Warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;"
+        category="Accessibility"
+        priority="3"
+        summary="Keyboard inaccessible widget"
+        explanation="A widget that is declared to be clickable but not declared to be focusable is not accessible via the keyboard. Please add the `focusable` attribute as well."
+        errorLine1="        android:clickable=&quot;true&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="117"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="KeyboardInaccessibleWidget"
+        severity="Warning"
+        message="&apos;clickable&apos; attribute found, please also add &apos;focusable&apos;"
+        category="Accessibility"
+        priority="3"
+        summary="Keyboard inaccessible widget"
+        explanation="A widget that is declared to be clickable but not declared to be focusable is not accessible via the keyboard. Please add the `focusable` attribute as well."
+        errorLine1="            android:clickable=&quot;true&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="81"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="LabelFor"
+        severity="Warning"
+        message="Missing accessibility label: provide either a view with an `android:labelFor` that references this view or provide an `android:hint`"
+        category="Accessibility"
+        priority="2"
+        summary="Missing accessibility label"
+        explanation="Editable text fields should provide an `android:hint` or, provided your `minSdkVersion` is at least 17, they may be referenced by a view with a `android:labelFor` attribute.&#xA;&#xA;When using `android:labelFor`, be sure to provide an `android:text` or an `android:contentDescription`.&#xA;&#xA;If your view is labeled but by a label in a different layout which includes this one, just suppress this warning from lint."
+        errorLine1="        &lt;EditText"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="55"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_feedback_page.xml"
+            line="302"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Home Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="50"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Home&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="58"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Capture Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Capture Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="69"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="77"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Capture&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Capture&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="85"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Feedback Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Feedback Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="96"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="104"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Feedback&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Feedback&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="112"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="139"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Welcome User!&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Welcome User!&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="151"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Tennis Posture Analysis&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Tennis Posture Analysis&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="29"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Email Address&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:hint=&quot;Email Address&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="57"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:hint=&quot;Password&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Show/Hide Password&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Show/Hide Password&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="80"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Sign In&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Sign In&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="97"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Forgot Password&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Forgot Password&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="118"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Don&apos;t have an account?&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Don&apos;t have an account?&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="130"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot; Sign up&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot; Sign up&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_log_in_page.xml"
+            line="145"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Save&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Save&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Full Name&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Full Name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="50"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Height&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Height&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="72"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Tap to select height&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:hint=&quot;Tap to select height&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Handedness&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;Handedness&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="94"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Left&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Left&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="112"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Right&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Right&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_player_info_page.xml"
+            line="123"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Home Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="49"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Home&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="57"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Capture Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Capture Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Capture Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Capture Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="76"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Capture&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Capture&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="84"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Upload Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Upload Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="96"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Upload Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Upload Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="104"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Upload&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Upload&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="112"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Feedback Box&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:contentDescription=&quot;Feedback Box&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="123"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Feedback Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Feedback Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="131"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Feedback&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Feedback&quot; />"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="139"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Home Image&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:contentDescription=&quot;Home Image&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="169"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Done&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="                android:text=&quot;Done&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="35"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Player Info&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Player Info&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Logout&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Logout&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="64"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Select Height&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Select Height&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\dialog_height_picker.xml"
+            line="12"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;&apos;&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;&apos;&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\dialog_height_picker.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;&quot;&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="            android:text=&quot;&amp;#34;&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\dialog_height_picker.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="Hardcoded string &quot;Confirm&quot;, should use `@string` resource"
+        category="Internationalization"
+        priority="5"
+        summary="Hardcoded text"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:&#xA;&#xA;* When creating configuration variations (for example for landscape or portrait) you have to repeat the actual text (and keep it up to date when making changes)&#xA;&#xA;* The application cannot be translated to other languages by just adding new translations for existing string resources.&#xA;&#xA;There are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="        android:text=&quot;Confirm&quot;"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\dialog_height_picker.xml"
+            line="59"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_gravity=&quot;bottom|right&quot;"
+        errorLine2="                                    ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_feedback_page.xml"
+            line="293"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_gravity=&quot;bottom|right&quot;"
+        errorLine2="                                    ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_home_page.xml"
+            line="130"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_gravity=&quot;bottom|right&quot;"
+        errorLine2="                                    ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_upload_page.xml"
+            line="159"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="RtlHardcoded"
+        severity="Warning"
+        message="Use &quot;`end`&quot; instead of &quot;`right`&quot; to ensure correct behavior in right-to-left locales"
+        category="Internationalization:Bidirectional Text"
+        priority="5"
+        summary="Using left/right instead of start/end attributes"
+        explanation="Using `Gravity#LEFT` and `Gravity#RIGHT` can lead to problems when a layout is rendered in locales where text flows from right to left. Use `Gravity#START` and `Gravity#END` instead. Similarly, in XML `gravity` and `layout_gravity` attributes, use `start` rather than `left`.&#xA;&#xA;For XML attributes such as paddingLeft and `layout_marginLeft`, use `paddingStart` and `layout_marginStart`. **NOTE**: If your `minSdkVersion` is less than 17, you should add **both** the older left/right attributes **as well as** the new start/end attributes. On older platforms, where RTL is not supported and the start/end attributes are unknown and therefore ignored, you need the older left/right attributes. There is a separate lint check which catches that type of error.&#xA;&#xA;(Note: For `Gravity#LEFT` and `Gravity#START`, you can use these constants even when targeting older platforms, because the `start` bitmask is a superset of the `left` bitmask. Therefore, you can use `gravity=&quot;start&quot;` rather than `gravity=&quot;left|start&quot;`.)"
+        errorLine1="            android:layout_gravity=&quot;bottom|right&quot;"
+        errorLine2="                                    ~~~~~~~~~~~~">
+        <location
+            file="C:\Users\emily\Documents\SE481\Tennis-Posture-Analysis\app\src\main\res\layout\activity_user_menu.xml"
+            line="26"
+            column="37"/>
+    </issue>
+
+</issues>
