@@ -11,7 +11,10 @@
     <!-- Optional: If you plan to record audio with video -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <!-- Optional: If you plan to save videos to public external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />

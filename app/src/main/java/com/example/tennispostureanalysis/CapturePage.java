@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
@@ -16,10 +17,13 @@ import android.media.MediaRecorder;
 import android.media.MediaScannerConnection;
 import android.media.projection.MediaProjection;
 import android.media.projection.MediaProjectionManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.ParcelFileDescriptor;
+import android.provider.MediaStore;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.Size;
@@ -50,19 +54,22 @@ import com.google.mediapipe.glutil.EglManager;
 import com.google.protobuf.InvalidProtocolBufferException;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.lang.Math;
 
 public class CapturePage extends AppCompatActivity {
     private static final String TAG = "CapturePage";
+
     private static final String BINARY_GRAPH_NAME = "pose_tracking_gpu.binarypb";
     private static final String INPUT_VIDEO_STREAM_NAME = "input_video";
     private static final String OUTPUT_VIDEO_STREAM_NAME = "output_video";
     private static final String OUTPUT_LANDMARKS_STREAM_NAME = "pose_landmarks";
+
     private static final CameraHelper.CameraFacing CAMERA_FACING = CameraHelper.CameraFacing.FRONT;
     private static final boolean FLIP_FRAMES_VERTICALLY = true;
-    // Threshold in feet for auto-start (example: start recording if user is 5 feet away or more)
-    private static final double DISTANCE_THRESHOLD_FEET = 5.0;
+
+    // Removed DISTANCE_THRESHOLD_FEET and autoStartTriggered since auto-record is no longer needed.
 
     // For MediaProjection (screen recording)
     private static final int REQUEST_CODE_SCREEN_CAPTURE = 1000;
@@ -73,10 +80,6 @@ public class CapturePage extends AppCompatActivity {
     private boolean isRecording = false;
 
     // File path where the video is saved.
-    private String recordedFilePath;
-
-    // Flag to ensure auto-start is triggered only once.
-    private boolean autoStartTriggered = false;
 
     static {
         System.loadLibrary("mediapipe_jni");
@@ -85,12 +88,17 @@ public class CapturePage extends AppCompatActivity {
 
     private SurfaceTexture previewFrameTexture;
     private SurfaceView previewDisplayView;
-    private TextView distanceOverlay; // For showing feedback (e.g., "3 FEET BACK")
+    private TextView distanceOverlay; // You can still use this for debug or remove if no longer needed.
     private EglManager eglManager;
     private FrameProcessor processor;
     private ExternalTextureConverter converter;
     private ApplicationInfo applicationInfo;
     private CameraXPreviewHelper cameraHelper;
+    private String recordedFilePath;
+
+
+    private static final double DISTANCE_THRESHOLD_FEET = 5.0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,17 +107,16 @@ public class CapturePage extends AppCompatActivity {
         Log.d(TAG, "Selected Capture Mode: " + captureMode);
         setContentView(getContentViewLayoutResId());
 
-        // Assume your layout includes a container for preview and a TextView with id "distance_overlay"
         previewDisplayView = new SurfaceView(this);
         distanceOverlay = findViewById(R.id.distance_overlay);
         setupPreviewDisplayView();
 
         Button recordButton = findViewById(R.id.record_button);
         projectionManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
+
+        // Only manual record now:
         recordButton.setOnClickListener(v -> {
             if (!isRecording) {
-                // If user manually taps record, cancel auto-start.
-                autoStartTriggered = true;
                 startScreenCapture();
                 recordButton.setText("Stop Recording");
             } else {
@@ -132,6 +139,8 @@ public class CapturePage extends AppCompatActivity {
                 INPUT_VIDEO_STREAM_NAME,
                 OUTPUT_VIDEO_STREAM_NAME);
         processor.getVideoSurfaceOutput().setFlipY(FLIP_FRAMES_VERTICALLY);
+
+        // Callback for the pose landmarks.
         processor.addPacketCallback(
                 OUTPUT_LANDMARKS_STREAM_NAME,
                 (packet) -> {
@@ -140,8 +149,8 @@ public class CapturePage extends AppCompatActivity {
                         byte[] landmarksRaw = PacketGetter.getProtoBytes(packet);
                         NormalizedLandmarkList poseLandmarks = NormalizedLandmarkList.parseFrom(landmarksRaw);
                         runOnUiThread(() -> {
+
                             checkUserDistance(poseLandmarks);
-                            // If we want to also auto-trigger on stance, call checkStanceAndAutoTrigger(poseLandmarks) here.
                         });
                         Log.v(TAG, "[TS:" + packet.getTimestamp() + "] " + getPoseLandmarksDebugString(poseLandmarks));
                     } catch (InvalidProtocolBufferException exception) {
@@ -316,7 +325,6 @@ public class CapturePage extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-
     private void setupMediaRecorder() {
         mediaRecorder = new MediaRecorder();
         mediaRecorder.setVideoSource(MediaRecorder.VideoSource.SURFACE);
@@ -324,26 +332,49 @@ public class CapturePage extends AppCompatActivity {
         mediaRecorder.setVideoEncoder(MediaRecorder.VideoEncoder.H264);
         mediaRecorder.setVideoEncodingBitRate(512 * 1000);
         mediaRecorder.setVideoFrameRate(30);
+
+        // Calculate width/height
         int width = previewDisplayView.getWidth();
         int height = previewDisplayView.getHeight();
         if (width <= 0 || height <= 0) {
             DisplayMetrics metrics = getResources().getDisplayMetrics();
             width = metrics.widthPixels;
             height = metrics.heightPixels;
-            Log.d(TAG, "Using default display dimensions: " + width + "x" + height);
         }
         mediaRecorder.setVideoSize(width, height);
-        // Save the output file
-        recordedFilePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MOVIES)
-                .getAbsolutePath() + "/recorded_video.mp4";
-        mediaRecorder.setOutputFile(recordedFilePath);
+
         try {
+           //Insert a row in MediaStore
+            Uri videoUri = createVideoUri();
+            if (videoUri == null) {
+                Log.e(TAG, "Failed to create video Uri in MediaStore!");
+                return;
+            }
+
+            //Open a file descriptor for that Uri
+            ParcelFileDescriptor pfd =
+                    getContentResolver().openFileDescriptor(videoUri, "rw");
+            if (pfd == null) {
+                Log.e(TAG, "Failed to open ParcelFileDescriptor!");
+                return;
+            }
+
+            //Provide that file descriptor to MediaRecorder
+            mediaRecorder.setOutputFile(pfd.getFileDescriptor());
             mediaRecorder.prepare();
-            Log.d(TAG, "MediaRecorder prepared.");
+            Log.d(TAG, "MediaRecorder prepared. Using Uri: " + videoUri);
+
+            // If we want to pass something to the VideoPreviewActivity,
+            // store the Uri as a String or keep it as a field:
+            recordedFilePath = videoUri.toString();
         } catch (IOException e) {
             Log.e(TAG, "MediaRecorder prepare failed", e);
         }
     }
+
+
+
+
 
     // Creates a VirtualDisplay that directs screen content to the MediaRecorder.
     private void createVirtualDisplay() {
@@ -356,10 +387,16 @@ public class CapturePage extends AppCompatActivity {
             Log.d(TAG, "Using default display dimensions for VirtualDisplay: " + width + "x" + height);
         }
         int dpi = getResources().getDisplayMetrics().densityDpi;
-        virtualDisplay = mediaProjection.createVirtualDisplay("ScreenCapture",
-                width, height, dpi,
+        virtualDisplay = mediaProjection.createVirtualDisplay(
+                "ScreenCapture",
+                width,
+                height,
+                dpi,
                 DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR,
-                mediaRecorder.getSurface(), null, null);
+                mediaRecorder.getSurface(),
+                null,
+                null
+        );
         Log.d(TAG, "VirtualDisplay created.");
     }
 
@@ -374,6 +411,7 @@ public class CapturePage extends AppCompatActivity {
                 Log.e(TAG, "MediaRecorder stop failed", e);
             }
             mediaRecorder.reset();
+
             if (virtualDisplay != null) {
                 virtualDisplay.release();
             }
@@ -381,39 +419,62 @@ public class CapturePage extends AppCompatActivity {
                 mediaProjection.stop();
             }
             isRecording = false;
-            autoStartTriggered = false; // Reset auto-start flag after recording ends.
-            // Trigger a media scan to add the video to the MediaStore.
-            MediaScannerConnection.scanFile(this,
-                    new String[]{recordedFilePath},
+
+            MediaScannerConnection.scanFile(
+                    this,
+                    new String[] { recordedFilePath },
                     null,
-                    (path, uri) -> Log.d(TAG, "MediaScanner scanned " + path + ": " + uri));
-            // Launch preview activity so the user can watch the recorded video.
-            Intent previewIntent = new Intent(CapturePage.this, VideoPreviewActivity.class);
+                    (path, uri) -> Log.d(TAG, "Scanned " + path + ": " + uri)
+            );
+
+            // Launch preview
+            Intent previewIntent = new Intent(this, VideoPreviewActivity.class);
             previewIntent.putExtra("VIDEO_PATH", recordedFilePath);
             startActivity(previewIntent);
         }
     }
 
-    // Checks the user's distance using shoulder landmarks.
+
+    private Uri createVideoUri() {
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Video.Media.TITLE, "MyRecordedVideo");
+        values.put(MediaStore.Video.Media.DISPLAY_NAME, "recorded_video.mp4");
+        values.put(MediaStore.Video.Media.MIME_TYPE, "video/mp4");
+        values.put(MediaStore.Video.Media.DATE_ADDED, System.currentTimeMillis() / 1000);
+
+        // This places the file under e.g. Movies/TennisPostureAnalysis
+        values.put(MediaStore.Video.Media.RELATIVE_PATH,
+                Environment.DIRECTORY_MOVIES + "/TennisPostureAnalysis");
+
+        return getContentResolver().insert(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, values);
+    }
+
+
+
+    // Checks the user's distance using shoulder landmarks (for overlay info only).
     private void checkUserDistance(NormalizedLandmarkList poseLandmarks) {
-        if (poseLandmarks.getLandmarkCount() < 13) return;
+        if (poseLandmarks == null || poseLandmarks.getLandmarkCount() < 12) {
+            return;
+        }
         NormalizedLandmark leftShoulder = poseLandmarks.getLandmark(11);
         NormalizedLandmark rightShoulder = poseLandmarks.getLandmark(12);
+
         int viewWidth = previewDisplayView.getWidth();
-        if (viewWidth <= 0) return;
+        if (viewWidth <= 0) {
+            return;
+        }
+
         double shoulderPixelDistance = Math.abs((rightShoulder.getX() - leftShoulder.getX()) * viewWidth);
-        double calibrationConstant = 1000; // Calibrate this constant for your device.
+
+        double calibrationConstant = 1000;
         double estimatedDistanceFeet = calibrationConstant / shoulderPixelDistance;
+
+        // Show "X FEET BACK" if user is closer than 5 ft, else "Position OK"
         if (estimatedDistanceFeet < DISTANCE_THRESHOLD_FEET) {
-            double feetRemaining = DISTANCE_THRESHOLD_FEET - estimatedDistanceFeet;
-            distanceOverlay.setText(String.format("%.1f FEET BACK", feetRemaining));
+            double feetNeeded = DISTANCE_THRESHOLD_FEET - estimatedDistanceFeet;
+            distanceOverlay.setText(String.format("%.1f FEET BACK", feetNeeded));
         } else {
             distanceOverlay.setText("Position OK");
-            if (!isRecording && !autoStartTriggered) {
-                autoStartTriggered = true;
-                Log.d(TAG, "User is far enough (" + estimatedDistanceFeet + " feet). Auto-starting recording.");
-                startScreenCapture();
-            }
         }
     }
 }

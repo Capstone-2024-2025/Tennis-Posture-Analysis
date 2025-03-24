@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730555615747",
+    "project_id": "tennispostureanalysisapp",
+    "storage_bucket": "tennispostureanalysisapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730555615747:android:00deeca86876e342765c36",
+        "android_client_info": {
+          "package_name": "com.example.tennispostureanalysis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT9ZD-wiXdYesFrjx-mkkxdZDp2O2aPKs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
