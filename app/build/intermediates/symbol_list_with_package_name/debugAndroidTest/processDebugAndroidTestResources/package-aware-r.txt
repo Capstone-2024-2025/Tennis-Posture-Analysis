@@ -1,3 +1,0 @@
-com.example.tennispostureanalysis.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

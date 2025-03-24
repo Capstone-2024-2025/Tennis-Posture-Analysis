@@ -7,6 +7,9 @@ appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.10.0"
 constraintlayout = "2.2.0"
+litert = "1.1.0"
+mobileFfmpegFull = "4.4"
+opencvAndroid = "4.5.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,6 +19,9 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+litert = { group = "com.google.ai.edge.litert", name = "litert", version.ref = "litert" }
+mobile-ffmpeg-full = { module = "com.arthenica:mobile-ffmpeg-full", version.ref = "mobileFfmpegFull" }
+opencv-android = { module = "org.opencv:opencv-android", version.ref = "opencvAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
