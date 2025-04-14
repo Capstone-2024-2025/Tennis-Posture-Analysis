@@ -38,7 +38,7 @@ public class UserMenu extends AppCompatActivity {
             }
         });
 
-        // Done Button action
+        // Logout Button action
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

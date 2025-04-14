@@ -38,6 +38,9 @@
             android:name=".VideoPreviewActivity"
             android:exported="false" />
         <activity
+            android:name=".AllSessionsActivity"
+            android:exported="false" />
+        <activity
             android:name=".PlayerInfoPage"
             android:exported="false" />
         <activity
