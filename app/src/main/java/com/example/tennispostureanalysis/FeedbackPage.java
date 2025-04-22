@@ -77,7 +77,7 @@ public class FeedbackPage extends AppCompatActivity {
         sessionRecyclerView = findViewById(R.id.sessionRecyclerView);
         sessionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        sessionList = getDummySessions(); // You can replace this with real session data later
+        sessionList = getDummySessions(); // replace this with real session data later
         sessionAdapter = new SessionAdapter(sessionList, true); // true = small layout for horizontal scroll
         sessionRecyclerView.setAdapter(sessionAdapter);
 
@@ -106,12 +106,9 @@ public class FeedbackPage extends AppCompatActivity {
 
     private List<Session> getDummySessions() {
         List<Session> dummyList = new ArrayList<>();
-
-        // Use realistic dummy thumbnail paths (or local drawables if you want)
         dummyList.add(new Session("https://via.placeholder.com/150", System.currentTimeMillis()));
         dummyList.add(new Session("https://via.placeholder.com/150/FF0000", System.currentTimeMillis() - 3600000)); // 1 hour ago
         dummyList.add(new Session("https://via.placeholder.com/150/00FF00", System.currentTimeMillis() - 86400000)); // 1 day ago
-
         return dummyList;
     }
 }
