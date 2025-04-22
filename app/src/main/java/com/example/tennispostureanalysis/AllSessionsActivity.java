@@ -15,36 +15,34 @@ public class AllSessionsActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private SessionAdapter sessionAdapter;
+    private List<Session> allSessions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_sessions);
 
+        // Done Button navigates back to FeedbackPage
         View doneButton = findViewById(R.id.done_button);
-
-        // Done Button action
-        doneButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Redirect to to UserMenu
-                Intent intent = new Intent(AllSessionsActivity.this, FeedbackPage.class);
-                startActivity(intent);
-            }
+        doneButton.setOnClickListener(v -> {
+            Intent intent = new Intent(AllSessionsActivity.this, FeedbackPage.class);
+            startActivity(intent);
         });
 
+        // Setup RecyclerView
         recyclerView = findViewById(R.id.allSessionsRecyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this)); // vertical scroll
 
-        // Receive the list passed from FeedbackPage
+        // Get session list from intent
         Intent intent = getIntent();
-        List<Session> allSessions = (List<Session>) intent.getSerializableExtra("sessionList");
+        allSessions = (List<Session>) intent.getSerializableExtra("sessionList");
 
         if (allSessions == null) {
             allSessions = new ArrayList<>(); // fallback
         }
 
-        sessionAdapter = new SessionAdapter(allSessions);
+        // Use full-width layout (false = large layout)
+        sessionAdapter = new SessionAdapter(allSessions, false);
         recyclerView.setAdapter(sessionAdapter);
     }
 }

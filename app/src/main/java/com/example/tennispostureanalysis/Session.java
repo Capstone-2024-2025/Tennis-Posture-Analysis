@@ -3,19 +3,19 @@ package com.example.tennispostureanalysis;
 import java.io.Serializable;
 
 public class Session implements Serializable {
-    private String title;
     private String thumbnailPath;
+    private long timestamp;
 
-    public Session(String title, String thumbnailPath) {
-        this.title = title;
+    public Session(String thumbnailPath, long timestamp) {
         this.thumbnailPath = thumbnailPath;
-    }
-
-    public String getTitle() {
-        return title;
+        this.timestamp = timestamp;
     }
 
     public String getThumbnailPath() {
         return thumbnailPath;
+    }
+
+    public long getTimestamp() {
+        return timestamp;
     }
 }

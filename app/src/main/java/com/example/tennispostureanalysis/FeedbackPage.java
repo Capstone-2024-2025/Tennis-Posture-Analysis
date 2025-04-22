@@ -3,7 +3,6 @@ package com.example.tennispostureanalysis;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,7 +59,7 @@ public class FeedbackPage extends AppCompatActivity {
         // "View All" Button
         findViewById(R.id.viewAll).setOnClickListener(v -> {
             Intent intent = new Intent(FeedbackPage.this, AllSessionsActivity.class);
-            intent.putExtra("sessionList", new ArrayList<>(sessionList)); // send list
+            intent.putExtra("sessionList", (ArrayList<Session>) sessionList);
             startActivity(intent);
         });
 
@@ -76,29 +75,18 @@ public class FeedbackPage extends AppCompatActivity {
 
         // Sessions RecyclerView
         sessionRecyclerView = findViewById(R.id.sessionRecyclerView);
-        sessionRecyclerView.setLayoutManager(
-                new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        sessionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        sessionList = getDummySessions(); // Swap with real backend data later
-        sessionAdapter = new SessionAdapter(sessionList);
+        sessionList = getDummySessions(); // You can replace this with real session data later
+        sessionAdapter = new SessionAdapter(sessionList, true); // true = small layout for horizontal scroll
         sessionRecyclerView.setAdapter(sessionAdapter);
 
         // Drills RecyclerView
         drillsRecycler = findViewById(R.id.drillsRecycler);
-        drillsRecycler.setLayoutManager(
-                new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        drillsRecycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
         drillList = getDrillData();
         drillAdapter = new DrillAdapter(this, drillList);
         drillsRecycler.setAdapter(drillAdapter);
-    }
-
-    // Dummy data for now
-    private List<Session> getDummySessions() {
-        List<Session> list = new ArrayList<>();
-        list.add(new Session("Session 1", "https://via.placeholder.com/150"));
-        list.add(new Session("Session 2", "https://via.placeholder.com/150"));
-        list.add(new Session("Session 3", "https://via.placeholder.com/150"));
-        return list;
     }
 
     private List<Drill> getDrillData() {
@@ -114,5 +102,16 @@ public class FeedbackPage extends AppCompatActivity {
         list.add(new Drill("Perfect Posture", "https://www.youtube.com/watch?v=o-PiQX1P0QY"));
         list.add(new Drill("Pro Tennis Drills", "https://www.youtube.com/watch?v=DL6elnRWo5o&list=PLJP-Wou-v6z3GXigpvRUDNbgk2R1mD6tU&index=10"));
         return list;
+    }
+
+    private List<Session> getDummySessions() {
+        List<Session> dummyList = new ArrayList<>();
+
+        // Use realistic dummy thumbnail paths (or local drawables if you want)
+        dummyList.add(new Session("https://via.placeholder.com/150", System.currentTimeMillis()));
+        dummyList.add(new Session("https://via.placeholder.com/150/FF0000", System.currentTimeMillis() - 3600000)); // 1 hour ago
+        dummyList.add(new Session("https://via.placeholder.com/150/00FF00", System.currentTimeMillis() - 86400000)); // 1 day ago
+
+        return dummyList;
     }
 }
