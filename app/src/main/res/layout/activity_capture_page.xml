@@ -1,25 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_capture_page"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Container for the preview display -->
+    <!-- Camera Preview -->
     <FrameLayout
         android:id="@+id/preview_display_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Overlay TextView to show distance feedback -->
+    <!-- Transparent Canvas for Inference -->
+    <com.example.tennispostureanalysis.InferenceOverlayView
+        android:id="@+id/inference_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Distance Feedback -->
     <TextView
         android:id="@+id/distance_overlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Distance"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
-        android:layout_gravity="center" />
+        android:textSize="24sp"
+        android:layout_gravity="center|top" />
 
     <!-- Record Button -->
     <Button
@@ -30,5 +35,6 @@
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@android:color/holo_red_dark" />
+
 
 </FrameLayout>

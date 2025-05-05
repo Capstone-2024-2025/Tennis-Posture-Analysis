@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,6 +9,7 @@
     tools:context=".CaptureSelection"
     android:background="#3f3f3f">
 
+    <!-- Prompt -->
     <TextView
         android:id="@+id/Prompt"
         android:layout_width="wrap_content"
@@ -16,78 +18,214 @@
         android:textColor="#FAFFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
 
+    <!-- Stand and Handheld -->
     <LinearLayout
-        android:id="@+id/button_stand"
-        android:layout_width="186dp"
-        android:layout_height="219dp"
-        android:layout_weight="1"
-
-        android:background="@drawable/rounded_box"
-        android:contentDescription="Phone Stand"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        android:id="@+id/recording_mode_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/Prompt"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.219">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/phonestand_img"
-            android:layout_width="306dp"
-            android:layout_height="170dp"
-            android:contentDescription="Phone Stand Option"
-            android:src="@drawable/phonestand" />
-
-        <TextView
-            android:id="@+id/PhoneStandText"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/button_stand"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Phone Stand"
-            android:textColor="#FAFFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/phonestand_img"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/phonestand"
+                android:contentDescription="Phone Stand Option" />
+
+            <TextView
+                android:id="@+id/PhoneStandText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Stand"
+                android:textColor="#FAFFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_handheld"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:layout_marginStart="8dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/handheld_img"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/handheld"
+                android:contentDescription="HandHeld Option" />
+
+            <TextView
+                android:id="@+id/HandheldText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handheld"
+                android:textColor="#FAFFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+        </LinearLayout>
     </LinearLayout>
 
+    <!-- Record Form / Track Swing -->
     <LinearLayout
-        android:id="@+id/button_handheld"
-        android:layout_width="189dp"
-        android:layout_height="227dp"
-        android:layout_weight="1"
-        android:background="@drawable/rounded_box"
-        android:contentDescription="handheld"
+        android:id="@+id/recording_type_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/recording_mode_container"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855">
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
 
-        <ImageView
-            android:id="@+id/handheld_img"
-            android:layout_width="152dp"
-            android:layout_height="174dp"
-            android:contentDescription="HandHeld Option"
-            android:src="@drawable/handheld" />
-
-        <TextView
-            android:id="@+id/HandheldText"
+        <Button
+            android:id="@+id/record_form_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Handheld"
-            android:textColor="#FAFFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="Record Form"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/btn_orange_selector"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/track_swing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Swing"
+            android:background="@drawable/btn_green_selector"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
+    <!-- Tooltip -->
+    <LinearLayout
+        android:id="@+id/swing_instruction_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/tooltip_background"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@id/recording_type_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/swing_instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You will have 20 seconds to record up to 3 swings. The app will automatically stop after that."
+            android:textColor="#FAFAFA"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/swing_continue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_green_selector" />
+    </LinearLayout>
+
+    <!-- Form Selection -->
+    <LinearLayout
+        android:id="@+id/form_selection_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/swing_instruction_bubble"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/form_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What would you like to work on?"
+            android:textColor="#FAFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <Spinner
+            android:id="@+id/form_type_spinner"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_box"
+            android:padding="12dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <!-- Continue / Get Ready -->
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/form_selection_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_orange_selector"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/get_ready_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Ready"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/form_selection_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_green_selector"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-

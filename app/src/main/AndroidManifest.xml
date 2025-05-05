@@ -13,6 +13,8 @@
     <!-- Optional: If you plan to save videos to public external storage -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
 
 
@@ -55,6 +57,8 @@
         <activity
             android:name=".FeedbackPage"
             android:exported="false" />
+        <activity android:name=".FeedbackActivity" />
+
         <activity
             android:name=".HomePage"
             android:exported="false" />

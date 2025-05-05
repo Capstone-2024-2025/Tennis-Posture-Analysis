@@ -17,4 +17,14 @@
     <string name="Fb">Feedback</string>
     <string name="FbImg">Feedback Image</string>
     <string name="FbBox">Feedback Box</string>
+    <string-array name="form_types_array">
+        <item>Overhead Serve</item>
+        <item>Kick Serve</item>
+        <item>Flat Serve</item>
+        <item>Forehand Swing</item>
+        <item>Backhand Swing</item>
+        <item>Volley</item>
+    </string-array>
+
+
 </resources>
