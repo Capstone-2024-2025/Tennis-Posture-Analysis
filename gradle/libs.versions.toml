@@ -11,6 +11,7 @@ litert = "1.1.0"
 mediapipeFramework = "0.10.0"
 mobileFfmpegFull = "4.4"
 opencvAndroid = "4.5.3"
+firebaseDatabase = "21.0.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -24,6 +25,7 @@ litert = { group = "com.google.ai.edge.litert", name = "litert", version.ref = "
 mediapipe-framework = { module = "com.google.mediapipe:mediapipe-framework", version.ref = "mediapipeFramework" }
 mobile-ffmpeg-full = { module = "com.arthenica:mobile-ffmpeg-full", version.ref = "mobileFfmpegFull" }
 opencv-android = { module = "org.opencv:opencv-android", version.ref = "opencvAndroid" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

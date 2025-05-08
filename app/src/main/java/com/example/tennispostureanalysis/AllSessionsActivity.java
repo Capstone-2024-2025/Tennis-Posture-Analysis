@@ -1,7 +1,5 @@
 package com.example.tennispostureanalysis;
 
-import com.example.tennispostureanalysis.Session;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -40,12 +38,21 @@ public class AllSessionsActivity extends AppCompatActivity {
         allSessions = (List<Session>) intent.getSerializableExtra("sessionList");
 
         if (allSessions == null) {
-            allSessions = new ArrayList<>(); // fallback
+            allSessions = new ArrayList<>(); // fallback to empty list
         }
 
-        // Use full-width layout (false = large layout)
+        // Use full-width layout and enable click to feedback
         sessionAdapter = new SessionAdapter(allSessions, false, session -> {
+            Intent feedbackIntent = new Intent(AllSessionsActivity.this, FeedbackActivity.class);
+            feedbackIntent.putExtra(FeedbackActivity.EXTRA_FEEDBACK, generateFeedbackForSession(session));
+            startActivity(feedbackIntent);
         });
+
         recyclerView.setAdapter(sessionAdapter);
+    }
+
+    private String generateFeedbackForSession(Session session) {
+        return "Feedback for session recorded on:\n" +
+                android.text.format.DateFormat.format("MMM dd, yyyy • h:mm a", session.getTimestamp());
     }
 }

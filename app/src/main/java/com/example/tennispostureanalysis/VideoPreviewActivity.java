@@ -119,6 +119,9 @@ public class VideoPreviewActivity extends AppCompatActivity {
         graphButton.setOnClickListener(v -> {
             Toast.makeText(this, "Graph generated", Toast.LENGTH_SHORT).show();
             // Launch graph visualization activity
+            Intent graphIntent = new Intent(VideoPreviewActivity.this, SwingGraphActivity.class);
+            intent.putExtra(SwingGraphActivity.EXTRA_SWING_TYPE, formType); // e.g., "Backhand", "Serve", etc.
+            startActivity(graphIntent);
         });
 
         swingReRecordButton.setOnClickListener(v -> reRecordVideo());

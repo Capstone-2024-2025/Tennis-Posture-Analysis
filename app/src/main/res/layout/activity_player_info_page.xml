@@ -102,7 +102,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/leftHanded"
+                android:id="@+id/left_button"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
@@ -113,7 +113,7 @@
                 android:textColor="@color/black" />
 
             <RadioButton
-                android:id="@+id/rightHanded"
+                android:id="@+id/right_button"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
