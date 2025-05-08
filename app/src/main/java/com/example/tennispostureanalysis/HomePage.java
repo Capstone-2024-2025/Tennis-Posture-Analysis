@@ -131,7 +131,7 @@ public class HomePage extends AppCompatActivity {
         lineChart.getAxisRight().setEnabled(false); // Hide right Y-axis
     }
 
-    // ✅ Create a separate ValueFormatter class for session labels
+    // Create a separate ValueFormatter class for session labels
     public static class SessionValueFormatter extends ValueFormatter {
         @Override
         public String getFormattedValue(float value) {

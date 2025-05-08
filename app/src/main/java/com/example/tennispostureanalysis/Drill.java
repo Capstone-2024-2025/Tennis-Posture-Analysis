@@ -23,16 +23,16 @@ public class Drill {
         return "https://img.youtube.com/vi/" + videoId + "/0.jpg";
     }
 
-    // This supports both short youtu.be links and standard youtube.com/watch?v= links.
+    // This supports both short youtube links and standard youtube.com/watch?v= links.
     private String extractYoutubeId(String url) {
         try {
-            // Handle shortened youtu.be links like: https://youtu.be/abc123
+            // Handle shortened youtu.be links
             if (url.contains("youtu.be/")) {
                 // Get everything after the last '/' which is the video ID
                 return url.substring(url.lastIndexOf("/") + 1);
             }
 
-            // Handle standard YouTube links like: https://www.youtube.com/watch?v=abc123
+            // Handle standard YouTube links
             else if (url.contains("v=")) {
                 // Split the string on "v=" and take the second part
                 String[] parts = url.split("v=");
@@ -50,7 +50,7 @@ public class Drill {
                 }
             }
         } catch (Exception e) {
-            // Print any unexpected errors (e.g., null URL or malformed format)
+            // Print any unexpected errors
             e.printStackTrace();
         }
 

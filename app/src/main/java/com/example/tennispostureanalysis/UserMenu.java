@@ -22,7 +22,7 @@ public class UserMenu extends AppCompatActivity {
         Button playerButton = findViewById(R.id.info_button);
         View doneButton = findViewById(R.id.done_button);
 
-        // Navigate to HomePage.java on button click
+        // Navigate to HomePage on button click
         playerButton.setOnClickListener(view -> {
             Intent intent = new Intent(UserMenu.this, PlayerInfoPage.class);
             startActivity(intent);

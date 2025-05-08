@@ -1,5 +1,7 @@
 package com.example.tennispostureanalysis;
 
+import com.example.tennispostureanalysis.Session;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +44,8 @@ public class AllSessionsActivity extends AppCompatActivity {
         }
 
         // Use full-width layout (false = large layout)
-        sessionAdapter = new SessionAdapter(allSessions, false);
+        sessionAdapter = new SessionAdapter(allSessions, false, session -> {
+        });
         recyclerView.setAdapter(sessionAdapter);
     }
 }

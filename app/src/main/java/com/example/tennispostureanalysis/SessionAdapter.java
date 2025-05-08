@@ -4,11 +4,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.ImageView;
 
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,10 +16,17 @@ public class SessionAdapter extends RecyclerView.Adapter<SessionAdapter.SessionV
 
     private List<Session> sessions;
     private boolean useSmallLayout; // true for FeedbackPage, false for View All
+    private OnSessionClickListener clickListener;
 
-    public SessionAdapter(List<Session> sessions, boolean useSmallLayout) {
+    public interface OnSessionClickListener {
+        void onSessionClick(Session session);
+    }
+
+    // Updated constructor with click listener
+    public SessionAdapter(List<Session> sessions, boolean useSmallLayout, OnSessionClickListener clickListener) {
         this.sessions = sessions;
         this.useSmallLayout = useSmallLayout;
+        this.clickListener = clickListener;
     }
 
     public static class SessionViewHolder extends RecyclerView.ViewHolder {
@@ -53,6 +57,13 @@ public class SessionAdapter extends RecyclerView.Adapter<SessionAdapter.SessionV
         SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy • h:mm a", Locale.getDefault());
         String formattedDate = sdf.format(new Date(session.getTimestamp()));
         holder.time.setText(formattedDate);
+
+        // Make each item clickable
+        holder.itemView.setOnClickListener(v -> {
+            if (clickListener != null) {
+                clickListener.onSessionClick(session);
+            }
+        });
     }
 
     @Override

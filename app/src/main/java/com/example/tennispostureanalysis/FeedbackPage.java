@@ -17,7 +17,6 @@ public class FeedbackPage extends AppCompatActivity {
     private RecyclerView sessionRecyclerView;
     private SessionAdapter sessionAdapter;
     private List<Session> sessionList;
-
     private RecyclerView drillsRecycler;
     private DrillAdapter drillAdapter;
     private List<Drill> drillList;
@@ -77,8 +76,15 @@ public class FeedbackPage extends AppCompatActivity {
         sessionRecyclerView = findViewById(R.id.sessionRecyclerView);
         sessionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        sessionList = getDummySessions(); // replace this with real session data later
-        sessionAdapter = new SessionAdapter(sessionList, true); // true = small layout for horizontal scroll
+        sessionList = getDummySessions(); // Replace with real data later
+        sessionAdapter = new SessionAdapter(sessionList, true, session -> {
+            Intent intent = new Intent(FeedbackPage.this, FeedbackActivity.class);
+            intent.putExtra(FeedbackActivity.EXTRA_FEEDBACK, generateFeedbackForSession(session));
+            intent.putExtra("CAPTURE_MODE", "default");
+            intent.putExtra("FORM_TYPE", "default");
+            intent.putExtra("MODE", "SWING");
+            startActivity(intent);
+        });
         sessionRecyclerView.setAdapter(sessionAdapter);
 
         // Drills RecyclerView
@@ -106,9 +112,24 @@ public class FeedbackPage extends AppCompatActivity {
 
     private List<Session> getDummySessions() {
         List<Session> dummyList = new ArrayList<>();
-        dummyList.add(new Session("https://via.placeholder.com/150", System.currentTimeMillis()));
-        dummyList.add(new Session("https://via.placeholder.com/150/FF0000", System.currentTimeMillis() - 3600000)); // 1 hour ago
-        dummyList.add(new Session("https://via.placeholder.com/150/00FF00", System.currentTimeMillis() - 86400000)); // 1 day ago
+        dummyList.add(new Session(
+                "https://via.placeholder.com/150",
+                "https://yourserver.com/videos/session1.mp4",  // replace with real video path
+                System.currentTimeMillis()));
+        dummyList.add(new Session(
+                "https://via.placeholder.com/150/FF0000",
+                "https://yourserver.com/videos/session2.mp4",
+                System.currentTimeMillis() - 3600000));
+        dummyList.add(new Session(
+                "https://via.placeholder.com/150/00FF00",
+                "https://yourserver.com/videos/session3.mp4",
+                System.currentTimeMillis() - 86400000));
         return dummyList;
+    }
+
+    private String generateFeedbackForSession(Session session) {
+        // simple timestamp-based message
+        return "Feedback for session recorded on:\n" +
+                android.text.format.DateFormat.format("MMM dd, yyyy • h:mm a", session.getTimestamp());
     }
 }
