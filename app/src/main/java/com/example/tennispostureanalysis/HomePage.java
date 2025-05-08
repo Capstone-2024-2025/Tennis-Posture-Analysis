@@ -1,6 +1,8 @@
 package com.example.tennispostureanalysis;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -35,6 +37,10 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.BLACK);
+            getWindow().setNavigationBarColor(Color.BLACK);// makes top bar black
+        }
 
         // Get references to your View elements
         //View boxHome = findViewById(R.id.box_home);
@@ -131,7 +137,7 @@ public class HomePage extends AppCompatActivity {
         lineChart.getAxisRight().setEnabled(false); // Hide right Y-axis
     }
 
-    // ✅ Create a separate ValueFormatter class for session labels
+    // Create a separate ValueFormatter class for session labels
     public static class SessionValueFormatter extends ValueFormatter {
         @Override
         public String getFormattedValue(float value) {

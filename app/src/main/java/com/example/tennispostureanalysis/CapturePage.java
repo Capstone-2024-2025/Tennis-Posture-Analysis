@@ -113,7 +113,7 @@ public class CapturePage extends AppCompatActivity {
     private Button recordButton;
     private NormalizedLandmarkList latestLandmarks;
     private String analysisMode = "FORM";  // Default to FORM if not passed
-    public static boolean isDrawing = true;
+    public static boolean isDrawing = false;
 
 
 
@@ -533,9 +533,23 @@ public class CapturePage extends AppCompatActivity {
             MediaScannerConnection.scanFile(
                     this,
                     new String[] { recordedFilePath },
+
                     null,
                     (path, uri) -> Log.d(TAG, "Scanned " + path + ": " + uri)
             );
+            if (recordedFilePath != null) {
+                Session newSession = new Session(recordedFilePath, System.currentTimeMillis());
+
+                // Prevent accidental duplicates (optional double-check)
+                if (SessionStorage.sessions.isEmpty() || !SessionStorage.sessions.get(SessionStorage.sessions.size() - 1).getVideoUri().equals(recordedFilePath)) {
+                    SessionStorage.sessions.add(newSession);
+                    Log.d("SessionSave", "New session added: " + recordedFilePath);
+                } else {
+                    Log.d("SessionSave", "Duplicate session skipped");
+                }
+            }
+
+
 
             // Launch preview
             Intent previewIntent = new Intent(this, VideoPreviewActivity.class);

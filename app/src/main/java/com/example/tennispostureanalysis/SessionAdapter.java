@@ -1,5 +1,6 @@
 package com.example.tennispostureanalysis;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,13 +29,16 @@ public class SessionAdapter extends RecyclerView.Adapter<SessionAdapter.SessionV
     public static class SessionViewHolder extends RecyclerView.ViewHolder {
         TextView title;
         TextView time;
+        ImageView thumbnail;
 
         public SessionViewHolder(View view) {
             super(view);
             title = view.findViewById(R.id.sessionTitle);
             time = view.findViewById(R.id.sessionTime);
+            thumbnail = view.findViewById(R.id.thumbnail); // hook to your layout
         }
     }
+
 
     @Override
     public SessionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -47,13 +51,18 @@ public class SessionAdapter extends RecyclerView.Adapter<SessionAdapter.SessionV
     public void onBindViewHolder(SessionViewHolder holder, int position) {
         Session session = sessions.get(position);
 
-        String sessionTitle = "Session " + (position + 1);
-        holder.title.setText(sessionTitle);
-
+        // Title and timestamp
+        holder.title.setText("Session " + (position + 1));
         SimpleDateFormat sdf = new SimpleDateFormat("MMM dd, yyyy • h:mm a", Locale.getDefault());
-        String formattedDate = sdf.format(new Date(session.getTimestamp()));
-        holder.time.setText(formattedDate);
+        holder.time.setText(sdf.format(new Date(session.getTimestamp())));
+
+        // Load thumbnail from video URI
+        Glide.with(holder.itemView.getContext())
+                .load(Uri.parse(session.getVideoUri()))
+                .thumbnail(0.1f) // Optional: shows a low-res preview while loading
+                .into(holder.thumbnail);
     }
+
 
     @Override
     public int getItemCount() {

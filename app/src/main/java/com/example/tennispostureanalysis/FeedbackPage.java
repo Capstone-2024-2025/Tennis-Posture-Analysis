@@ -1,6 +1,8 @@
 package com.example.tennispostureanalysis;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
@@ -28,6 +30,11 @@ public class FeedbackPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_feedback_page);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(Color.BLACK);
+            getWindow().setNavigationBarColor(Color.BLACK);// makes top bar black
+        }
+
 
         // Get references to your View elements
         View boxHome = findViewById(R.id.box_home);
@@ -77,8 +84,8 @@ public class FeedbackPage extends AppCompatActivity {
         sessionRecyclerView = findViewById(R.id.sessionRecyclerView);
         sessionRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
-        sessionList = getDummySessions(); // replace this with real session data later
-        sessionAdapter = new SessionAdapter(sessionList, true); // true = small layout for horizontal scroll
+        sessionList = SessionStorage.sessions;
+        sessionAdapter = new SessionAdapter(sessionList, true);
         sessionRecyclerView.setAdapter(sessionAdapter);
 
         // Drills RecyclerView
